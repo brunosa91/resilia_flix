@@ -4,14 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/pagina_de_cadastro.css" />
     <title>Document</title>
   </head>
   <body>
-    <!-- <input type="text" id="inputuser" />
-    <button type="submit" id="text" onclick="valida()">cadastrar</button>
-    <input type="text" id="inputuser" />
-    <button type="submit" id="text" onclick="log()">entrar</button>
-    <input type="text" id="entrar" />
-    <script src="../java_script/models/pagina_de_cadastro.js.js"></script> -->
+    <header class="cabecalho">
+      <h1>ResiliaFlix</h1>
+    </header>
+    <main class="corpo">
+      <form action="">
+        <div class="div_nome">
+          <fieldset class="fieldset_nome">
+            <label for="text">Nome</label>
+            <input type="text" id="nome" />
+            <label for="text">Sobrenome</label>
+            <input type="text" id="sobrenome" />
+          </fieldset>
+        </div>
+        <div class="div_email">
+          <fieldset class="fieldset_email">
+            <label for="text">Digite seu e-mail</label>
+            <input type="text" id="valor_email" />
+            <button type="submit" id="cadastrar">cadastrar</button>
+          </fieldset>
+        </div>
+        <!-- <button type="submit" id="text" onclick="log()">entrar</button> -->
+        <!-- <input type="text" id="entrar" /> -->
+      </form>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../java_script/models/pagina_de_cadastro_model.js"></script>
+    <script src="../java_script/controllers/pagina_de_cadastro_controller.js"></script>
+    <script src="../java_script/views/pagina_de_cadastro_view.js"></script>
+    <script src="../java_script/pagina_de_cadastro_main.js"></script>
   </body>
 </html>
