@@ -1,0 +1,56 @@
+@-webkit-keyframes estilohbo {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@-moz-keyframes estilohbo {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+@keyframes estilohbo {
+    0%{background-position:0% 48%}
+    50%{background-position:100% 53%}
+    100%{background-position:0% 48%}
+}
+body {
+    background: linear-gradient(270deg, #b90cf9, #6a0490, #37024b, #15011c);
+    background-size: 800% 800%;
+
+    -webkit-animation: estilohbo 30s ease infinite;
+    -moz-animation: estilohbo 30s ease infinite;
+    animation: estilohbo 30s ease infinite;
+}
+
+
+nav{
+    background-color: rgb(94, 3, 94);
+        height: 90px;
+}
+main{
+            font-family: 'Questrial', sans-serif; text-shadow: violet 1px 1px;
+                display: flex;
+                    justify-content: space-between;
+                        line-height: 20px
+                    
+}
+.card-1, .card-2, .card-3, .card-4{
+    box-shadow: grey 2px 2px 5px; margin-top: 30px
+}
+.immg{
+    height: 35px;
+}
+a{
+    font-family: 'Questrial', sans-serif; text-shadow: violet 2px 2px
+}
+.card-title{
+    text-shadow: rgb(83, 2, 83) 3px 3px;
+        color: rgb(250, 222, 9);
+            font-size: 2.5em
+}
+.card-text{
+    font-size: 1.5em; color: blue
+}
+.card-body{
+    background-color: rgb(56, 2, 63);
+}
