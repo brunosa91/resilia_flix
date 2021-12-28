@@ -1,6 +1,11 @@
 class Model {
-  constructor(valorinputemail) {
-    this.valor_input_email = valorinputemail;
+  constructor(valorinputemail, valorcep) {
+    this.valor_input_email = valorinputemail; //$("#valor_email").val())
+    this.valor_input_cep = valorcep;
+    this._logradouro = "";
+    this._bairro = "";
+    this._localidade = "";
+    this._uf = "";
   }
   validaEmail() {
     if (
@@ -16,6 +21,37 @@ class Model {
       // return false;
     }
     return this.validaEmail;
+  }
+  preencheCep() {
+    let urlviacep = `https://viacep.com.br/ws/${this.valor_input_cep}/json/`;
+    const requisicao = new XMLHttpRequest();
+    requisicao.open("GET", urlviacep, false);
+    requisicao.onload = () => {
+      if (requisicao.status == 200) {
+        const response = JSON.parse(requisicao.response);
+        console.log(response);
+        this._atualizaDados(response);
+      }
+    };
+    requisicao.send();
+  }
+  _atualizaDados(objeto) {
+    this._logradouro = objeto.logradouro;
+    this._bairro = objeto.bairro;
+    this._localidade = objeto.localidade;
+    this._uf = objeto.uf;
+  }
+  getLogradouro() {
+    return this._logradouro;
+  }
+  getBairro() {
+    return this._bairro;
+  }
+  getLocalidade() {
+    return this._localidade;
+  }
+  getUf() {
+    return this._uf;
   }
 }
 // $("#cadastrar").click(function () {
@@ -34,23 +70,6 @@ class Model {
 //     }
 
 // }
-
-//   let apod = $("#date").val();
-//   $.ajax({
-//     url: `https://api.nasa.gov/planetary/apod?api_key=Ac7EEBSoSA2Jp3YNjDjCDRUy2HmkO86O0rwhaq1o&date=${apod}`,
-//     type: "GET",
-//     success: function (apodData) {
-//       console.log(apodData);
-//       $("#foto").attr("src", apodData.url);
-//       $("#titulo").text(apodData.title);
-//       $("#texto").text(apodData.explanation);
-
-//       $("#foto_entrada").css("display", "none");
-//       $(".texto_entrada").css("display", "none");
-//       $("#foto").css("display", "flex");
-//     },
-//   });
-// });
 
 // var inputname = document.getElementById("inputuser");
 // var inp = document.getElementById("entrar");
