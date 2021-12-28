@@ -6,7 +6,7 @@
 body {
   min-height: 100vh;
   width: 100%;
-  background-color: rebeccapurple;
+  background-color: gray;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -50,5 +50,17 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  border: none;
+}
+
+.div_endereco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fieldset_endereco {
+  display: flex;
+  flex-direction: column;
   border: none;
 }
