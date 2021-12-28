@@ -6,6 +6,7 @@ class Model {
     this._bairro = "";
     this._localidade = "";
     this._uf = "";
+    this.erro = "";
   }
   validaEmail() {
     if (
@@ -14,14 +15,12 @@ class Model {
         this.valor_input_email.indexOf("@")
     ) {
       alert("e-mail válido");
-      // localStorage.setItem("e-mail", email); // nome , bruno
-      // return true;
     } else {
       alert("e-mail inválido");
-      // return false;
     }
     return this.validaEmail;
   }
+
   preencheCep() {
     let urlviacep = `https://viacep.com.br/ws/${this.valor_input_cep}/json/`;
     const requisicao = new XMLHttpRequest();
@@ -31,6 +30,9 @@ class Model {
         const response = JSON.parse(requisicao.response);
         console.log(response);
         this._atualizaDados(response);
+      } else {
+        $("#erro").css("display", "flex");
+        $("#erro").text("Servidor fora do ar:complete os dados");
       }
     };
     requisicao.send();
@@ -40,6 +42,7 @@ class Model {
     this._bairro = objeto.bairro;
     this._localidade = objeto.localidade;
     this._uf = objeto.uf;
+    this.erro = objeto.erro;
   }
   getLogradouro() {
     return this._logradouro;
@@ -53,58 +56,8 @@ class Model {
   getUf() {
     return this._uf;
   }
+  getErro() {
+    console.log(this.erro);
+    return this.erro;
+  }
 }
-// $("#cadastrar").click(function () {
-//     const inputname = document.getElementById("valor_email");
-//     // var inp = document.getElementById("entrar");
-
-//     var email = inputname.value;
-
-//     if (email.indexOf("@") > 0 && email.indexOf(".com") > email.indexOf("@")) {
-//       alert("e-mail válido");
-//       localStorage.setItem("e-mail", email); // nome , bruno
-//       // return true;
-//     } else {
-//       alert("e-mail inválido");
-//       // return false;
-//     }
-
-// }
-
-// var inputname = document.getElementById("inputuser");
-// var inp = document.getElementById("entrar");
-// function valida() {
-//   var email = inputname.value;
-
-//   if (email.indexOf("@") > 0 && email.indexOf(".com") > email.indexOf("@")) {
-//     localStorage.setItem("e-mail", email); // nome , bruno
-//     // return true;
-//   } else {
-//     // return false;
-//   }
-// }
-
-// function escreve(parametro) {
-//   if (parametro) {
-//     alert("email valido");
-//   } else {
-//     alert("email invalido");
-//   }
-// }
-
-// console.log(escreve(valida));
-
-// function log() {
-//   var entra = localStorage.getItem("e-mail");
-//   var login = inp.value;
-
-//   if (entra === login) {
-//     alert("logou");
-//     // nome , bruno
-//     // return true;
-//   } else {
-//     alert("ferro");
-
-//     // return false;
-//   }
-// }

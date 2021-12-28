@@ -11,7 +11,10 @@ class Controller {
     let modelcep = new Model(this.valor_input_email, this.valor_input_cep);
     modelcep.preencheCep();
     let viewCep = new View();
-    viewCep.mostraCep(modelcep);
-    console.log(modelcep.getLogradouro());
+    if (modelcep.getErro() == true) {
+      viewCep.mostraErro();
+    } else {
+      viewCep.mostraCep(modelcep);
+    }
   }
 }

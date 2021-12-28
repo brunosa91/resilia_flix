@@ -10,4 +10,8 @@ class View {
     $("#uf").val(uf);
     console.log(parametromodel);
   }
+
+  mostraErro() {
+    $("#erro").css("display", "flex");
+  }
 }
