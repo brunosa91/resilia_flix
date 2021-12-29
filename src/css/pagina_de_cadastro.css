@@ -52,6 +52,9 @@ body {
   margin-top: 20px;
   border: none;
 }
+#erro_email {
+  display: none;
+}
 
 .div_endereco {
   display: flex;

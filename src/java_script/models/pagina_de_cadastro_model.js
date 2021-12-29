@@ -8,15 +8,20 @@ class Model {
     this._uf = "";
     this.erro = "";
   }
+
   validaEmail() {
-    if (
-      this.valor_input_email.indexOf("@") > 0 &&
-      this.valor_input_email.indexOf(".com") >
-        this.valor_input_email.indexOf("@")
-    ) {
-      alert("e-mail válido");
-    } else {
-      alert("e-mail inválido");
+    try {
+      if (
+        this.valor_input_email.indexOf("@") > 0 &&
+        this.valor_input_email.indexOf(".com") >
+          this.valor_input_email.indexOf("@")
+      ) {
+        $("#erro_email").css("display", "none");
+      } else {
+        throw new Error("Login e Senha inválidos, tente novamente");
+      }
+    } catch (erro) {
+      $("#erro_email").css("display", "flex");
     }
     return this.validaEmail;
   }

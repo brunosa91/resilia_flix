@@ -25,13 +25,14 @@
           <fieldset class="fieldset_email">
             <label for="text">Digite seu e-mail</label>
             <input type="text" id="valor_email" />
-            <button type="submit" id="cadastrar">cadastrar</button>
+            <p id="erro_email">E-mail inválido</p>
+            <button type="button" id="cadastrar">cadastrar</button>
           </fieldset>
         </div>
         <div class="div_endereco">
           <fieldset class="fieldset_endereco">
             <label for="cep">CEP</label>
-            <input type="text" id="cep" />
+            <input type="text" maxlength="8" id="cep" />
             <p id="erro">cep inválido</p>
             <label for="logradouro">LOGRADOURO</label>
             <input type="text" id="logradouro" />
