@@ -4,50 +4,122 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/pagina_de_cadastro.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
     <title>Document</title>
   </head>
   <body>
     <header class="cabecalho">
-      <h1>ResiliaFlix</h1>
+      <nav
+        class="
+          navbar navbar-expand-lg
+          fixed-top
+          navbar-dark
+          bg-color bg-opacity-75
+        "
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fs-3 fonte-resiliaflix" href="#"
+            >ResiliaFlix</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav align-items-center">
+              <a class="nav-link text-white fonte-texto" href="#">ENTRAR</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                ><button
+                  type="button"
+                  class="btn btn-outline-light rounded-pill fonte-texto"
+                >
+                  CADASTRAR-SE
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main class="corpo">
-      <form action="">
-        <div class="div_nome">
-          <fieldset class="fieldset_nome">
-            <label for="text">Nome</label>
-            <input type="text" id="nome" />
-            <label for="text">Sobrenome</label>
-            <input type="text" id="sobrenome" />
-          </fieldset>
-        </div>
-        <div class="div_email">
-          <fieldset class="fieldset_email">
-            <label for="text">Digite seu e-mail</label>
-            <input type="text" id="valor_email" />
-            <p id="erro_email">E-mail inválido</p>
-            <button type="button" id="cadastrar">cadastrar</button>
-          </fieldset>
-        </div>
-        <div class="div_endereco">
-          <fieldset class="fieldset_endereco">
-            <label for="cep">CEP</label>
-            <input type="text" maxlength="8" id="cep" />
-            <p id="erro">cep inválido</p>
-            <label for="logradouro">LOGRADOURO</label>
-            <input type="text" id="logradouro" />
-            <label for="bairro">BAIRRO</label>
-            <input type="text" id="bairro" />
-            <label for="localidade">LOCALIDADE</label>
-            <input type="text" id="localidade" />
-            <label for="uf">UF</label>
-            <input type="text" id="uf" />
-          </fieldset>
-        </div>
-        <!-- <button type="submit" id="text" onclick="log()">entrar</button> -->
-        <!-- <input type="text" id="entrar" /> -->
+      <form action="" class="form">
+        <fieldset class="fieldset_nome">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" required />
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" id="sobrenome" required />
+        </fieldset>
+        <fieldset class="fieldset_email">
+          <label for="valor_email">Digite seu e-mail</label>
+          <input type="text" id="valor_email" required />
+          <p id="erro_email">E-mail inválido</p>
+          <label for="valor_senha">Cadastre sua senha</label>
+          <input type="number" id="valor_senha" required />
+          <p id="erro_senha">senha de números e maior que 6 números</p>
+        </fieldset>
+
+        <fieldset class="fieldset_endereco">
+          <label for="cep">Cep</label>
+          <input type="number" maxlength="8" id="cep" required />
+          <p id="erro">cep inválido</p>
+          <label for="logradouro">Logradouro</label>
+          <input type="text" id="logradouro" required />
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" required />
+          <label for="localidade">Localidade</label>
+          <input type="text" id="localidade" required />
+          <label for="uf">UF</label>
+          <input type="text" id="uf" required />
+        </fieldset>
+        <button type="button" id="cadastrar">cadastrar</button>
       </form>
     </main>
+    <footer class="rodape">
+      <p>Direitos Reservados</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../java_script/models/pagina_de_cadastro_model.js"></script>
     <script src="../java_script/controllers/pagina_de_cadastro_controller.js"></script>
