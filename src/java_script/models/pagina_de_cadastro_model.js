@@ -1,7 +1,8 @@
 class Model {
-  constructor(valorinputemail, valorcep) {
+  constructor(valorinputemail, valorcep, valorSenha) {
     this.valor_input_email = valorinputemail; //$("#valor_email").val())
     this.valor_input_cep = valorcep;
+    this.valor_input_senha = valorSenha;
     this._logradouro = "";
     this._bairro = "";
     this._localidade = "";
@@ -64,5 +65,13 @@ class Model {
   getErro() {
     console.log(this.erro);
     return this.erro;
+  }
+
+  validaSenha(senha) {
+    if (senha.length > 6) {
+      $("#erro_senha").css("display", "none");
+    } else {
+      $("#erro_senha").css("display", "flex");
+    }
   }
 }
