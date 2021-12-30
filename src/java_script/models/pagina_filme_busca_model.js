@@ -34,4 +34,27 @@ class Model {
     this.capa = objetoFilme.Poster;
     this.response = objetoFilme.Response;
   }
+  novoTitulo() {
+    return this.titulo;
+  }
+
+  novoSinopse() {
+    return this.sinopse;
+  }
+
+  novoDiretor() {
+    return this.diretor;
+  }
+
+  novoGenero() {
+    return this.genero;
+  }
+
+  novoCapa() {
+    return this.capa;
+  }
+
+  novoResponse() {
+    return this.capa;
+  }
 }
