@@ -9,4 +9,10 @@ class View {
     $('.texto').css('display', 'flex');
     $('.staff').css('display', 'flex');
   }
+  mostraErro() {
+    $('#vazio').css('display', 'flex');
+    $('.staff').css('display', 'none');
+    $('.texto').css('display', 'none');
+    $('.poster').css('display', 'none');
+  }
 }
