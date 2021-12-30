@@ -6,9 +6,11 @@
 body {
   min-height: 100vh;
   width: 100%;
-  background-color: gray;
+  background-image: radial-gradient(#11238c, #0b1659);
+
   background-size: cover;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
 }
 .cabecalho {
@@ -16,31 +18,48 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #0b1659;
 }
+.fonte-resiliaflix {
+  font-family: "Varela Round", sans-serif;
+}
+
 .corpo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  height: 80%;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 50px;
 }
 
-.div_nome {
+.form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
 }
 .fieldset_nome {
   width: 50%;
   display: flex;
-  justify-content: space-evenly;
-  border: none;
-}
-
-.div_email {
-  display: flex;
   justify-content: center;
+  border: none;
+  color: #b28bd9;
+  font-family: "Varela Round", sans-serif;
+}
+#nome {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#sobrenome {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 .fieldset_email {
@@ -51,23 +70,82 @@ body {
   align-items: center;
   margin-top: 20px;
   border: none;
+  color: aliceblue;
+  font-family: "Varela Round", sans-serif;
+}
+#valor_email {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#valor_senha {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 #erro_email {
   display: none;
 }
-
-.div_endereco {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#erro_senha {
+  display: none;
 }
+
 .fieldset_endereco {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: none;
+  color: aliceblue;
+  font-family: "Varela Round", sans-serif;
+}
+
+#cep {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#logradouro {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#bairro {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#localidade {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#uf {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 #erro {
   display: none;
   color: red;
+}
+
+#cadastrar {
+  margin-top: 10px;
+  background-color: #0b1659;
+  border: none;
+  color: aliceblue;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+}
+.rodape {
+  height: 50px;
+  background-color: #0b1659;
 }
