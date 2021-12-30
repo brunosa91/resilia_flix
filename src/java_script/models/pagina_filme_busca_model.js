@@ -26,4 +26,12 @@ class Model {
     };
     requisicao.send();
   }
+  _atualizaFilmes(objetoFilme) {
+    this.titulo = objetoFilme.Title;
+    this.sinopse = objetoFilme.Plot;
+    this.diretor = objetoFilme.Director;
+    this.genero = objetoFilme.Genre;
+    this.capa = objetoFilme.Poster;
+    this.response = objetoFilme.Response;
+  }
 }
