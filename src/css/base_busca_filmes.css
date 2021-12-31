@@ -1,8 +1,15 @@
-#transparencia-fixed {
+.opacity-navbar {
   width: 100%;
   height: 80px;
   position: fixed;
   background-color: rgba(40, 2, 41, 0.5);
+}
+
+.transparencia-navbar {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background-color: rgba(40, 2, 41, 0);
 }
 
 .logo {
@@ -66,4 +73,34 @@ input {
   color: rgb(182, 108, 224);
   border-color: rgb(182, 108, 224);
   font-weight: bold;
+}
+
+.menu {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border-color: white;
+  border-style: solid;
+  right: 20px;
+}
+#checkbox {
+  display: none;
+}
+label {
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 40px;
+  display: block;
+}
+
+.hamburguer {
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 100%;
+  border-radius: 30px;
+  background-color: rgb(185, 13, 13);
+  transition: 0.35s ease-in-out;
 }
