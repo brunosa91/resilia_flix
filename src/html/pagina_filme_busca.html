@@ -15,15 +15,37 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo"></div>
-        <div class="navegacao">
-          <a class="home"> </a>
-          <a class="contato"> </a>
-          <form class="busca">
-            <input type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn-busca" type="submit">BUSCAR</button>
-          </form>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">ResiliaFlix</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="navegacao collapse navbar-collapse"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav" id="navegacao">
+              <a class="home"> HOME</a>
+              <a class="contato"> CONTATO</a>
+              <form class="busca">
+                <input
+                  type="search"
+                  placeholder="Digite o nome do filme"
+                  aria-label="Search"
+                />
+                <button class="btn-busca" type="submit">BUSCAR</button>
+              </form>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
