@@ -1,5 +1,5 @@
-$('.busca').click((e) => {
+$('.btn-busca').click((e) => {
   e.preventDefault();
-  const filme = new Controller($('.filme').val());
+  const filme = new Controller($('.valFilme').val());
   filme.qualeOfilme();
 });
