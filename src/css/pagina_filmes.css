@@ -1,0 +1,19 @@
+.banner {
+  display: flex;
+  background-image: url('../img/avenger-banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  justify-content: start;
+  padding-left: 250px;
+}
+
+.carrosel {
+  width: 100%;
+  height: 600px;
+}

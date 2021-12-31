@@ -1,0 +1,7 @@
+#transparencia-fixed {
+}
+
+.barra-nav {
+  display: flex;
+  justify-content: space-around;
+}
