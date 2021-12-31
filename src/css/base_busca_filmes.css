@@ -1,5 +1,20 @@
+#transparencia-fixed {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background-color: rgba(40, 2, 41, 0.5);
+}
+
 .logo {
+  color: aliceblue;
   font-family: 'Righteous', cursive;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: rgb(182, 108, 224);
+  font-weight: bold;
 }
 
 .barra-nav {
@@ -9,7 +24,7 @@
 
 .tamanho-nav {
   display: flex;
-  width: 500px;
+  width: 600px;
   align-items: center;
   justify-content: space-around;
 }
@@ -18,4 +33,37 @@
 .contato {
   text-decoration: none;
   cursor: pointer;
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+}
+
+.home:hover {
+  color: rgb(182, 108, 224);
+  font-weight: bold;
+}
+
+.contato:hover {
+  color: rgb(182, 108, 224);
+  font-weight: bold;
+}
+
+input {
+  border-radius: 5px;
+  width: 250px;
+}
+
+.btn-busca {
+  border-radius: 25px;
+  width: 150px;
+  background: none;
+  border-color: white;
+  color: white;
+  border-style: solid;
+  font-weight: bold;
+}
+
+.btn-busca:hover {
+  color: rgb(182, 108, 224);
+  border-color: rgb(182, 108, 224);
+  font-weight: bold;
 }
