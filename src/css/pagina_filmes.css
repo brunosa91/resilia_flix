@@ -13,7 +13,10 @@
   padding-left: 250px;
 }
 
+.banner > h1 {
+  font-family: 'Righteous', cursive;
+}
 .carrosel {
   width: 100%;
-  height: 600px;
+  height: 200px;
 }

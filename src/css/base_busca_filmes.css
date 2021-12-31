@@ -1,7 +1,21 @@
-#transparencia-fixed {
+.logo {
+  font-family: 'Righteous', cursive;
 }
 
 .barra-nav {
   display: flex;
+  justify-content: end;
+}
+
+.tamanho-nav {
+  display: flex;
+  width: 500px;
+  align-items: center;
   justify-content: space-around;
+}
+
+.home,
+.contato {
+  text-decoration: none;
+  cursor: pointer;
 }
