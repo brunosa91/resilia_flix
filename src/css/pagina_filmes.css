@@ -19,11 +19,63 @@
 .carrosel {
   width: 100%;
   height: 200px;
+  background-color: rgb(101, 14, 104);
+  color: white;
+}
+
+/* .carrosel::before,
+.carrosel::after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  z-index: 1;
+}
+.carrosel::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgb(101, 14, 104),
+    rgba(101, 14, 104, 0)
+  );
+}
+
+.carrosel::after {
+  right: 0;
+  background: linear-gradient(to right, rgb(101, 14, 104) 0%, transparent 100%);
+} */
+
+.carrosel-itens {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  padding: 0;
+  animation: scrolling 25s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-240%);
+  }
+}
+
+.carrosel-itens:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.carrosel-itens li {
+  border: 3px solid rgb(182, 108, 224);
+  width: 20%;
+  flex-shrink: 0;
 }
 
 .filmes {
   width: 100%;
-  height: 600px;
+  height: 800px;
   background-color: #6a11cb;
   background: radial-gradient(rgb(101, 14, 104), rgba(12, 23, 85, 1));
 }

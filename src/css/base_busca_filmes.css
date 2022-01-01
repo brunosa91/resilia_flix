@@ -75,7 +75,13 @@ input {
   font-weight: bold;
 }
 
-.menu {
+footer {
+  height: 300px;
+  width: 100%;
+  background-color: rgba(12, 23, 85, 1);
+}
+
+/* .menu {
   position: absolute;
   height: 50px;
   width: 50px;
@@ -103,4 +109,4 @@ label {
   border-radius: 30px;
   background-color: rgb(185, 13, 13);
   transition: 0.35s ease-in-out;
-}
+} */
