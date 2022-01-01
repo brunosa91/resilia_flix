@@ -6,7 +6,7 @@
 body {
   min-height: 100vh;
   width: 100%;
-  background-image: radial-gradient(#11238c, #0b1659);
+  background-image: radial-gradient(rgb(101, 14, 104), rgb(12, 23, 85));
 
   background-size: cover;
   display: flex;
@@ -30,7 +30,7 @@ body {
   justify-content: center;
   height: 80%;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .form {
@@ -40,97 +40,73 @@ body {
   align-items: center;
   padding: 20px;
   margin: auto;
+  width: 60%;
 }
 .fieldset_nome {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   border: none;
-  color: #b28bd9;
+  color: #f2f2f2;
+
   font-family: "Varela Round", sans-serif;
 }
-#nome {
+.input {
+  width: 60%;
   background: none;
   border-top: none;
   border-left: none;
   border-right: none;
+  margin-bottom: 10px;
+  color: #5797b1;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
 }
+
 #sobrenome {
   background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border: none;
+  border-bottom: 2px solid;
+  width: 300px;
 }
 
 .fieldset_email {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
   border: none;
-  color: aliceblue;
+  color: #f2f2f2;
   font-family: "Varela Round", sans-serif;
 }
-#valor_email {
-  background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
-#valor_senha {
-  background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
+
 #erro_email {
   display: none;
+  color: red;
 }
 #erro_senha {
   display: none;
+  color: red;
+}
+#erro_confirma_senha {
+  display: none;
+  color: red;
 }
 
 .fieldset_endereco {
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   border: none;
-  color: aliceblue;
+  color: #f2f2f2;
   font-family: "Varela Round", sans-serif;
 }
 
-#cep {
-  background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
-#logradouro {
-  background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
-#bairro {
-  background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
-#localidade {
-  background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
-#uf {
-  background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
 #erro {
   display: none;
   color: red;
@@ -140,10 +116,14 @@ body {
   margin-top: 10px;
   background-color: #0b1659;
   border: none;
-  color: aliceblue;
-  height: 30px;
-  width: 100px;
-  border-radius: 10px;
+  color: #f2f2f2;
+  border: 1px solid white;
+  height: 35px;
+  width: 200px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Varela Round", sans-serif;
 }
 .rodape {
   height: 50px;
