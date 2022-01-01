@@ -8,7 +8,14 @@ class Controller {
     model.buscaFilme();
     let view = new View();
     if (model.response === 'True') {
-      view.resultadoFilme(model);
+      if (model.capa === 'N/A') {
+        console.log(model.capa);
+        view.removeAppend();
+        view.semBanner(model);
+      } else {
+        view.removeAppend();
+        view.resultadoFilme(model);
+      }
     } else {
       view.mostraErro();
     }

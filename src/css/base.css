@@ -54,6 +54,13 @@
   font-weight: bold;
 }
 
+.busca {
+  display: flex;
+  width: 420px;
+  justify-content: space-around;
+  justify-items: center;
+}
+
 input {
   border-radius: 5px;
   border-style: none;
@@ -69,12 +76,13 @@ input::placeholder {
 
 .btn-busca {
   border-radius: 25px;
-  width: 150px;
+  width: 140px;
   background: none;
   border-color: white;
   color: white;
   border-style: solid;
   font-weight: bold;
+  margin-right: -10px;
 }
 
 .btn-busca:hover {

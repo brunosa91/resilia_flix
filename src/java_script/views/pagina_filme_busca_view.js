@@ -1,18 +1,28 @@
 class View {
-  resultadoFilme(filme) {
-    $('#titulo').text(filme.novoTitulo());
-    $('#sinopse').text(filme.novoSinopse());
-    $('#genero').text(filme.novoGenero());
-    $('#diretor').text(filme.novoDiretor());
-    $('.poster').attr('src', filme.novoCapa());
-    $('.poster').css('display', 'flex');
-    $('.texto').css('display', 'flex');
-    $('.staff').css('display', 'flex');
+  removeAppend() {
+    $('p').remove();
   }
-  mostraErro() {
-    $('#vazio').css('display', 'flex');
-    $('.staff').css('display', 'none');
-    $('.texto').css('display', 'none');
-    $('.poster').css('display', 'none');
+  resultadoFilme(filme) {
+    $('.nomeFilme').text(filme.novoTitulo());
+    $('.imagem').attr('src', filme.novoCapa());
+    $('.imagem').css('display', 'flex');
+    const ano = $('<p>').text(`Ano: ${filme.novoAno()}`);
+    const tipo = $('<p>').text(filme.novoTipo());
+    const duracao = $('<p>').text(filme.novoDuracao());
+    console.log(filme.novoAno());
+    $('.info').append(ano);
+    $('.info').append(tipo);
+    $('.info').append(duracao);
+  }
+  semBanner(filme) {
+    $('.nomeFilme').text(filme.novoTitulo());
+    $('.imagem').css('display', 'flex');
+    const ano = $('<p>').text(`Ano: ${filme.novoAno()}`);
+    const tipo = $('<p>').text(filme.novoTipo());
+    const duracao = $('<p>').text(filme.novoDuracao());
+    console.log(filme.novoAno());
+    $('.info').append(ano);
+    $('.info').append(tipo);
+    $('.info').append(duracao);
   }
 }

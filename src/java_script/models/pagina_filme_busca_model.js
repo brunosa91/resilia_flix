@@ -6,6 +6,9 @@ class Model {
     this.diretor = '';
     this.genero = '';
     this.capa = '';
+    this.ano = '';
+    this.tipo = '';
+    this.duracao = '';
     this.response = '';
   }
 
@@ -32,6 +35,9 @@ class Model {
     this.diretor = objetoFilme.Director;
     this.genero = objetoFilme.Genre;
     this.capa = objetoFilme.Poster;
+    this.ano = objetoFilme.Year;
+    this.duracao = objetoFilme.Runtime;
+    this.tipo = objetoFilme.Type;
     this.response = objetoFilme.Response;
   }
   novoTitulo() {
@@ -54,7 +60,18 @@ class Model {
     return this.capa;
   }
 
+  novoTipo() {
+    return this.tipo;
+  }
+  novoDuracao() {
+    return this.duracao;
+  }
+
+  novoAno() {
+    return this.ano;
+  }
+
   novoResponse() {
-    return this.capa;
+    return this.response;
   }
 }

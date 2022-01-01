@@ -4,4 +4,62 @@
   height: 650px;
   background-color: #6a11cb;
   background: radial-gradient(rgb(101, 14, 104), rgba(12, 23, 85, 1));
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  height: 75%;
+  border: 2px solid rgb(182, 108, 224);
+  box-shadow: inset 0 0 1em rgb(101, 14, 104), 0 0 1em rgba(12, 23, 85, 1);
+}
+
+.nomeFilme {
+  padding: 20px;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.box {
+  margin-top: 20px;
+  display: flex;
+  width: 60vw;
+  height: 80%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.texto {
+  width: 60%;
+  height: 100%;
+  color: rgb(182, 108, 224);
+}
+
+.imagem {
+  display: none;
+  height: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 5%;
+  color: white;
+  text-transform: capitalize;
+  padding-bottom: 5px;
+}
+
+p::before {
+  content: '\26B9  ';
 }

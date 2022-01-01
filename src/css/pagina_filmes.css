@@ -21,10 +21,10 @@
   height: 600px;
   align-items: center;
   justify-content: start;
-  padding-left: 250px;
 }
 
 .banner > h1 {
+  margin-left: 20%;
   font-family: 'Righteous', cursive;
 }
 
