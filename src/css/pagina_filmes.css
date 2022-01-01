@@ -19,7 +19,7 @@
 .carrosel {
   width: 100%;
   height: 200px;
-  background-color: rgb(101, 14, 104);
+  background-color: rgba(12, 23, 85, 1);
   color: white;
 }
 
@@ -68,14 +68,27 @@
 }
 
 .carrosel-itens li {
-  border: 3px solid rgb(182, 108, 224);
+  border: 1px solid rgb(182, 108, 224);
   width: 20%;
   flex-shrink: 0;
 }
 
 .filmes {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
-  height: 800px;
+  height: 1500px;
   background-color: #6a11cb;
   background: radial-gradient(rgb(101, 14, 104), rgba(12, 23, 85, 1));
+}
+
+.filmes > div {
+  margin: 20px;
+  width: 200px;
+  height: 300px;
+  border: 2px solid rgb(182, 108, 224);
+  box-shadow: inset 0 0 1em rgb(101, 14, 104), 0 0 1em rgba(12, 23, 85, 1);
 }
