@@ -1,6 +1,6 @@
 class NavbarModel {
   rolaPagina() {
-    if ($(window).scrollTop() > 300) {
+    if ($(window).scrollTop() > 200) {
       const tema = 'rolou';
       return tema;
     } else {

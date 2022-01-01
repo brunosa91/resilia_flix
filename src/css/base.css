@@ -56,7 +56,15 @@
 
 input {
   border-radius: 5px;
+  border-style: none;
   width: 250px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+input::placeholder {
+  text-align: center;
+  color: white;
 }
 
 .btn-busca {
