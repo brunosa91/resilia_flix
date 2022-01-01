@@ -1,3 +1,14 @@
+:root {
+  --carrosel-width: 100%;
+  --carrosel-height: 20vh;
+  --carrosel-itens: 12;
+  --carrosel-itens-displayed: 5;
+  --carrosel-itens-width: calc(
+    var(--carrosel-width) / var(--carrosel-itens-displayed)
+  );
+  --carrosel-animation-duration: calc(var(--carrosel-itens) * 5s);
+}
+
 .banner {
   display: flex;
   background-image: url('../img/avenger-banner.jpg');
@@ -16,11 +27,66 @@
 .banner > h1 {
   font-family: 'Righteous', cursive;
 }
+
 .carrosel {
-  width: 100%;
-  height: 200px;
+  position: relative;
+  width: var(--carrosel-width);
+  height: var(--carrosel-height);
   background-color: rgba(12, 23, 85, 1);
   color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.carrosel-itens {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  padding: 0;
+  animation: scrolling var(--carrosel-animation-duration) linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(
+      calc(-1 * var(--carrosel-itens-width) * var(--carrosel-itens))
+    );
+  }
+}
+
+.carrosel-itens:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.carrosel-itens li {
+  border: 1px solid rgb(182, 108, 224);
+  width: var(--carrosel-itens-width);
+  flex-shrink: 0;
+}
+
+.filmes {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 1500px;
+  background-color: #6a11cb;
+  background: radial-gradient(rgb(101, 14, 104), rgba(12, 23, 85, 1));
+}
+
+.filmes > div {
+  margin: 20px;
+  width: 200px;
+  height: 300px;
+  border: 2px solid rgb(182, 108, 224);
+  box-shadow: inset 0 0 1em rgb(101, 14, 104), 0 0 1em rgba(12, 23, 85, 1);
 }
 
 /* .carrosel::before,
@@ -45,50 +111,30 @@
   background: linear-gradient(to right, rgb(101, 14, 104) 0%, transparent 100%);
 } */
 
-.carrosel-itens {
-  list-style: none;
-  display: flex;
+.carrosel::before,
+.carrosel::after {
+  position: absolute;
+  top: 0;
+  width: 5%;
   height: 100%;
-  padding: 0;
-  animation: scrolling 25s linear infinite;
+  content: '';
+  z-index: 1;
 }
 
-@keyframes scrolling {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-240%);
-  }
+.carrosel::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(12, 23, 85, 1) 0%,
+    transparent 100%
+  );
 }
 
-.carrosel-itens:hover {
-  animation-play-state: paused;
-  cursor: pointer;
-}
-
-.carrosel-itens li {
-  border: 1px solid rgb(182, 108, 224);
-  width: 20%;
-  flex-shrink: 0;
-}
-
-.filmes {
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 1500px;
-  background-color: #6a11cb;
-  background: radial-gradient(rgb(101, 14, 104), rgba(12, 23, 85, 1));
-}
-
-.filmes > div {
-  margin: 20px;
-  width: 200px;
-  height: 300px;
-  border: 2px solid rgb(182, 108, 224);
-  box-shadow: inset 0 0 1em rgb(101, 14, 104), 0 0 1em rgba(12, 23, 85, 1);
+.carrosel::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(12, 23, 85, 1) 0%,
+    transparent 100%
+  );
 }
