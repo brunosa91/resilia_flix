@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-image: radial-gradient(rgb(101, 14, 104), rgb(12, 23, 85));
+
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.cabecalho {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b1659;
+}
+.fonte-resiliaflix {
+  font-family: "Varela Round", sans-serif;
+}
+
+.corpo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  width: 60%;
+}
+
+.input {
+  width: 60%;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 10px;
+  color: #5797b1;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+}
+
+.fieldset_email {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  color: #f2f2f2;
+  font-family: "Varela Round", sans-serif;
+}
+
+#erro_email {
+  display: none;
+}
+#erro_senha {
+  display: none;
+}
+
+#login {
+  margin-top: 10px;
+  background-color: #0b1659;
+  border: none;
+  color: #f2f2f2;
+  border: 1px solid white;
+  height: 35px;
+  width: 200px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Varela Round", sans-serif;
+}
+#esqueci_senha {
+  margin-top: 10px;
+  border: none;
+  color: #f2f2f2;
+  font-weight: 100;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+.rodape {
+  height: 50px;
+  background-color: #0b1659;
+}
