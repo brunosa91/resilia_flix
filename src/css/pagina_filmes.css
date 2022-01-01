@@ -1,6 +1,6 @@
 :root {
   --carrosel-width: 100%;
-  --carrosel-height: 20vh;
+  --carrosel-height: 30vh;
   --carrosel-itens: 12;
   --carrosel-itens-displayed: 5;
   --carrosel-itens-width: calc(
@@ -76,7 +76,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 2000px;
+  height: auto;
   background-color: #6a11cb;
   background: radial-gradient(rgb(101, 14, 104), rgba(12, 23, 85, 1));
 }
@@ -115,4 +115,12 @@
     rgba(12, 23, 85, 1) 0%,
     transparent 100%
   );
+}
+
+@media (max-width: 800px) {
+  :root {
+    --carrosel-width: 100%;
+    --carrosel-height: 30vh;
+    --carrosel-itens-displayed: 3;
+  }
 }
