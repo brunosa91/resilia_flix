@@ -22,7 +22,6 @@ class CarroselController {
       model.buscaFilme();
       objeto.push(model);
     }
-    console.log(objeto);
     const view = new CarroselView();
     view.carregaCarrosel(objeto);
   }

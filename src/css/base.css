@@ -127,3 +127,25 @@ label {
   background-color: rgb(185, 13, 13);
   transition: 0.35s ease-in-out;
 } */
+
+@media (max-width: 900px) {
+  .transparencia-navbar {
+    display: none;
+  }
+
+  .busca {
+    height: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input {
+    margin-bottom: 5px;
+    width: 120px;
+  }
+
+  .btn-busca {
+    width: 100px;
+  }
+}

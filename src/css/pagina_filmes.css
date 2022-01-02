@@ -6,7 +6,7 @@
   --carrosel-itens-width: calc(
     var(--carrosel-width) / var(--carrosel-itens-displayed)
   );
-  --carrosel-animation-duration: calc(var(--carrosel-itens) * 3s);
+  --carrosel-animation-duration: calc(var(--carrosel-itens) * 2s);
 }
 
 .banner {
@@ -64,7 +64,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2px;
 }
 
 @keyframes scrolling {
@@ -118,12 +117,12 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: auto;
+  height: 2000px;
   background-color: #6a11cb;
   background: radial-gradient(rgb(101, 14, 104), rgba(12, 23, 85, 1));
 }
 
-.filmes > div {
+.filmes > a {
   margin: 20px;
   width: 200px;
   height: 290px;
@@ -131,17 +130,35 @@
   box-shadow: inset 0 0 1em rgb(47, 71, 207), 0 0 1em rgb(177, 71, 180);
 }
 
-div > img {
+a > img {
   position: absolute;
   width: 210px;
   height: 300px;
   padding: 5px;
 }
 
-/* @media (max-width: 800px) {
+a > p {
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .filmes {
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
   :root {
-    --carrosel-width: 100%;
-    --carrosel-height: 30vh;
     --carrosel-itens-displayed: 6;
   }
-} */
+}
+
+@media (max-width: 500px) {
+  :root {
+    --carrosel-itens-displayed: 3;
+  }
+  .banner {
+    background-size: cover;
+    background-position: center;
+  }
+}

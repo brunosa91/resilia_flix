@@ -30,7 +30,6 @@ class CarregaFilmesController {
       model.buscaFilme();
       objeto.push(model);
     }
-    console.log(objeto);
     const view = new MostraFilmesView();
     view.carregaCapa(objeto);
   }

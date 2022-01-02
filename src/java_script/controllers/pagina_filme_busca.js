@@ -4,20 +4,25 @@ class Controller {
   }
 
   qualeOfilme() {
-    let model = new Model(this.filme);
-    model.buscaFilme();
-    let view = new View();
-    if (model.response === 'True') {
-      if (model.capa === 'N/A') {
-        console.log(model.capa);
-        view.removeAppend();
-        view.semBanner(model);
-      } else {
-        view.removeAppend();
-        view.resultadoFilme(model);
-      }
+    if (this.filme === undefined) {
+      console.log(this.filme);
     } else {
-      view.mostraErro();
+      let model = new Model(this.filme);
+      console.log(this.filme);
+      model.buscaFilme();
+      let view = new View();
+      if (model.response === 'True') {
+        if (model.capa === 'N/A') {
+          console.log(model.capa);
+          view.removeAppend();
+          view.semBanner(model);
+        } else {
+          view.removeAppend();
+          view.resultadoFilme(model);
+        }
+      } else {
+        view.mostraErro();
+      }
     }
   }
 }

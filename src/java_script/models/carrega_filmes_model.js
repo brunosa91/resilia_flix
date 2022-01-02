@@ -15,7 +15,6 @@ class EscolheFilmesModel {
     requisicao.onload = () => {
       if (requisicao.status == 200) {
         const response = JSON.parse(requisicao.response);
-        console.log(response);
         this._atualizaFilmes(response);
       }
     };
