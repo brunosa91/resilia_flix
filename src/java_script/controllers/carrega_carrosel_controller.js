@@ -1,6 +1,19 @@
 class CarroselController {
   constructor() {
-    this.filme = ['hereditary', 'us', 'a quiet place'];
+    this.filme = [
+      'hereditary',
+      'the cabin in the woods',
+      'us',
+      'a quiet place',
+      'host',
+      'the witch',
+      'midsommar',
+      'la llorona',
+      'it follows',
+      'boy behind the door',
+      'room',
+      'the amusement park',
+    ];
   }
   qualFilme() {
     const objeto = [];
