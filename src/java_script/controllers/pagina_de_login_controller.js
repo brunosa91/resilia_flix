@@ -5,11 +5,7 @@ class Controller {
   }
   validandoEmail() {
     let model = new Model(this.valor_input_email, this.valor_input_senha);
-    console.log(model.validaEmail());
+    let view = new View();
+    view.mostraEmailSenha(model.validaEmail());
   }
-
-  //   validandoSenha() {
-  //     let modelLogar = new Model(this.valor_input_email, this.valor_input_senha);
-  //     console.log(modelLogar.validaEmail());
-  //   }
 }
