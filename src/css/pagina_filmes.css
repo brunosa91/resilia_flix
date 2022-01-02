@@ -79,7 +79,7 @@
 
 .carrosel-itens:hover {
   animation-play-state: paused;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .carrosel::before,
@@ -138,7 +138,7 @@ a > img {
 }
 
 a > p {
-  display: flex;
+  display: none;
 }
 
 @media (max-width: 1000px) {
