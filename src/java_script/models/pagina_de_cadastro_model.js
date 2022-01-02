@@ -1,8 +1,9 @@
 class Model {
-  constructor(valorinputemail, valorcep, valorSenha) {
+  constructor(valorinputemail, valorcep, valorSenha, valorConfirmaSenha) {
     this.valor_input_email = valorinputemail; //$("#valor_email").val())
     this.valor_input_cep = valorcep;
     this.valor_input_senha = valorSenha;
+    this.valor_input_confirma_senha = valorConfirmaSenha;
     this._logradouro = "";
     this._bairro = "";
     this._localidade = "";
@@ -11,20 +12,31 @@ class Model {
   }
 
   validaEmail() {
-    try {
-      if (
-        this.valor_input_email.indexOf("@") > 0 &&
-        this.valor_input_email.indexOf(".com") >
-          this.valor_input_email.indexOf("@")
-      ) {
-        $("#erro_email").css("display", "none");
-      } else {
-        throw new Error("Login e Senha inválidos, tente novamente");
-      }
-    } catch (erro) {
-      $("#erro_email").css("display", "flex");
+    if (
+      this.valor_input_email.indexOf("@") > 0 &&
+      this.valor_input_email.indexOf(".com") >
+        this.valor_input_email.indexOf("@")
+    ) {
+      return "e-mail válido";
+    } else {
+      return "e-mail inválido";
     }
-    return this.validaEmail;
+  }
+
+  validaSenha() {
+    if (this.valor_input_senha.length > 6) {
+      return "senha válida";
+    } else {
+      return "senha inválida";
+    }
+  }
+
+  confirmaSenha() {
+    if (this.valor_input_confirma_senha == this.valor_input_senha) {
+      return "senha igual";
+    } else {
+      return "senha diferente";
+    }
   }
 
   preencheCep() {
@@ -65,13 +77,5 @@ class Model {
   getErro() {
     console.log(this.erro);
     return this.erro;
-  }
-
-  validaSenha(senha) {
-    if (senha.length > 6) {
-      $("#erro_senha").css("display", "none");
-    } else {
-      $("#erro_senha").css("display", "flex");
-    }
   }
 }
