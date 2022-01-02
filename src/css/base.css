@@ -9,7 +9,8 @@
   width: 100%;
   height: 80px;
   position: fixed;
-  background-color: rgba(40, 2, 41, 0);
+  background-color: rgba(40, 2, 41, 0.1);
+  z-index: 1;
 }
 
 .logo {
