@@ -3,7 +3,7 @@ class CarroselController {
     this.filme = [
       'hereditary',
       'the cabin in the woods',
-      'us',
+      'it',
       'a quiet place',
       'host',
       'the witch',

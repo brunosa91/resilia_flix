@@ -1,12 +1,12 @@
 :root {
   --carrosel-width: 100%;
-  --carrosel-height: 30vh;
+  --carrosel-height: 30%;
   --carrosel-itens: 12;
   --carrosel-itens-displayed: 8;
   --carrosel-itens-width: calc(
     var(--carrosel-width) / var(--carrosel-itens-displayed)
   );
-  --carrosel-animation-duration: calc(var(--carrosel-itens) * 1s);
+  --carrosel-animation-duration: calc(var(--carrosel-itens) * 3s);
 }
 
 .banner {
@@ -61,6 +61,10 @@
   border: 1px solid rgb(182, 108, 224);
   width: var(--carrosel-itens-width);
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
 }
 
 @keyframes scrolling {
@@ -108,7 +112,7 @@
 }
 
 .filmes {
-  padding: 20px;
+  padding: 50px 20px 20px 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -134,10 +138,10 @@ div > img {
   padding: 5px;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   :root {
     --carrosel-width: 100%;
     --carrosel-height: 30vh;
-    --carrosel-itens-displayed: 3;
+    --carrosel-itens-displayed: 6;
   }
-}
+} */
