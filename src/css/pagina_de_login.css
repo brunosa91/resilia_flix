@@ -68,9 +68,11 @@ body {
 
 #erro_email {
   display: none;
+  color: red;
 }
 #erro_senha {
   display: none;
+  color: red;
 }
 
 #login {
