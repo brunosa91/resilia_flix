@@ -8,9 +8,26 @@
   );
   --carrosel-animation-duration: calc(var(--carrosel-itens) * 2s);
 }
-
+.slide {
+  width: 100%;
+  height: 600px;
+}
 .banner {
   display: flex;
+  background-image: url('../img/avenger-banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner2 {
+  display: none;
   background-image: url('../img/avenger-banner.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +40,20 @@
   justify-content: center;
   flex-direction: column;
 }
-
+.banner3 {
+  display: none;
+  background-image: url('../img/avenger-banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 600px;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
 .banner > h1 {
   margin-left: 20%;
   text-align: center;
@@ -38,6 +68,47 @@
   font-family: 'Varela Round', sans-serif;
 }
 
+.next {
+  position: absolute;
+  background-color: rgb(9, 15, 51, 0.7);
+  height: 7%;
+  width: 5%;
+  z-index: 1;
+  right: 0;
+  margin-right: 3px;
+  border-radius: 2px;
+}
+
+.next > h3 {
+  text-align: center;
+  padding: 3px;
+}
+
+.prev {
+  position: absolute;
+  height: 7%;
+  width: 5%;
+  z-index: 1;
+  margin-left: 3px;
+  background-color: rgb(9, 15, 51, 0.7);
+  border-radius: 2px;
+}
+
+.prev > h3 {
+  text-align: center;
+  padding: 3px;
+}
+.prev:hover {
+  background-color: rgba(114, 40, 94, 0.3);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.next:hover {
+  background-color: rgba(114, 40, 94, 0.3);
+  cursor: pointer;
+  transition: 1s;
+}
 .carrosel {
   position: relative;
   width: var(--carrosel-width);
@@ -79,6 +150,7 @@
 
 .carrosel-itens:hover {
   animation-play-state: paused;
+
   /* cursor: pointer; */
 }
 

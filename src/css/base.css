@@ -3,6 +3,7 @@
   height: 80px;
   position: fixed;
   background-color: rgba(40, 2, 41, 0.5);
+  z-index: 10;
 }
 
 .transparencia-navbar {
@@ -10,7 +11,7 @@
   height: 80px;
   position: fixed;
   background-color: rgba(40, 2, 41, 0.1);
-  z-index: 1;
+  z-index: 10;
 }
 
 .logo {
@@ -22,7 +23,7 @@
 
 .logo:hover {
   color: rgb(182, 108, 224);
-  font-weight: bold;
+  transition: 1s;
 }
 
 .barra-nav {
@@ -47,12 +48,12 @@
 
 .home:hover {
   color: rgb(182, 108, 224);
-  font-weight: bold;
+  transition: 1s;
 }
 
 .contato:hover {
   color: rgb(182, 108, 224);
-  font-weight: bold;
+  transition: 1s;
 }
 
 .busca {
@@ -74,6 +75,10 @@ input::placeholder {
   text-align: center;
   color: white;
 }
+input:hover::placeholder {
+  color: rgb(182, 108, 224);
+  transition: 1s;
+}
 
 .btn-busca {
   border-radius: 25px;
@@ -89,7 +94,7 @@ input::placeholder {
 .btn-busca:hover {
   color: rgb(182, 108, 224);
   border-color: rgb(182, 108, 224);
-  font-weight: bold;
+  transition: 1s;
 }
 
 footer {
@@ -134,14 +139,14 @@ label {
   }
 
   .busca {
-    height: 70px;
+    height: 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   input {
-    margin-bottom: 5px;
+    padding: 2px;
     width: 120px;
   }
 

@@ -29,6 +29,7 @@
 
 .box {
   margin-top: 20px;
+  padding: 20px;
   display: flex;
   width: 60vw;
   height: 80%;
@@ -39,14 +40,31 @@
 .texto {
   width: 60%;
   height: 100%;
-  color: rgb(182, 108, 224);
+  color: white;
 }
 
+.sinopse {
+  color: rgb(255, 255, 255);
+  text-align: justify;
+  text-indent: 1.2em;
+  padding: 10px;
+}
+.texto > p {
+  text-align: justify;
+  padding: 10px;
+}
 .imagem {
   display: none;
-  height: 90%;
+  height: 100%;
   padding: 10px;
   margin-bottom: 10px;
+}
+
+.imagem-erro {
+  display: none;
+  height: 100%;
+  padding: 10px;
+  margin-bottom: 40px;
 }
 
 .info {
@@ -58,8 +76,4 @@
   color: white;
   text-transform: capitalize;
   padding-bottom: 5px;
-}
-
-p::before {
-  content: '\26B9  ';
 }
