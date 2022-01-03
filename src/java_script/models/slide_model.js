@@ -1,9 +1,31 @@
 class SlideNextModel {
-  constructor(indexSlide) {
+  constructor(indexSlide, contador) {
     this.index = indexSlide;
+    this.contador = contador;
   }
   passaSlide() {
-    const indexNovo = 0;
-    indexNovo == this.index.lenght - 1 ? (indexNovo = 0) : indexNovo++;
+    if (this.index - 1 == this.contador) {
+      this.contador = 0;
+    } else {
+      this.contador++;
+    }
+    console.log(this.contador);
+    return this.contador;
+  }
+}
+
+class SlidePrevModel {
+  constructor(indexSlide, contador) {
+    this.index = indexSlide;
+    this.contador = contador;
+  }
+  passaSlide() {
+    if (this.contador == 0) {
+      this.contador = this.index - 1;
+    } else {
+      this.contador--;
+    }
+    console.log(this.contador);
+    return this.contador;
   }
 }

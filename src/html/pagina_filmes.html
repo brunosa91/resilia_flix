@@ -26,10 +26,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-ligth opacity-navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand logo">ResiliaFlix</a>
-          <button
+      <nav class="opacity-navbar">
+        <div class="cabecalho container-fluid">
+          <a class="logo">ResiliaFlix</a>
+          <!-- <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -39,20 +39,10 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- <div class="menu">
-            <input type="checkbox" id="checkbox" />
-            <label for="checkbox">
-              <span class="hamburguer"></span>
-              <span class="hamburguer"></span>
-              <span class="hamburguer"></span>
-            </label>
-          </div> -->
-          <div
-            class="navegacao collapse navbar-collapse barra-nav"
-            id="navbarNavAltMarkup"
-          >
-            <div class="navbar-nav tamanho-nav">
+          </button> -->
+
+          <div class="barra-nav">
+            <div class="tamanho-nav">
               <a class="home"> HOME</a>
               <a class="contato"> CONTATO</a>
               <form class="busca">
@@ -70,10 +60,10 @@
       </nav>
     </header>
     <main>
-      <section class='slide'>
-        <section class="banner">
-          <h1>ResiliaFlix</h1>
-          <p class="test">
+      <section class="slide">
+        <section class="banner0">
+          <h1 class="nome0">ResiliaFlix</h1>
+          <p class="test0">
             Sua plataforma de filmes. <br />Nós levamos o filme e você a pipoca
           </p>
           <div class="next">
@@ -83,20 +73,31 @@
             <h3><</h3>
           </div>
         </section>
-        <section class="banner2">
-          <h1>ResiliaFlix</h1>
-          <p class="test">
+        <section class="banner1">
+          <h1 class="nome1">ResiliaFlix</h1>
+          <p class="test1">
             Sua plataforma de filmes. <br />Nós levamos o filme e você a pipoca
           </p>
+          <div class="next">
+            <h3>></h3>
+          </div>
+          <div class="prev">
+            <h3><</h3>
           </div>
         </section>
-        <section class="banner3">
-          <h1>ResiliaFlix</h1>
-          <p class="test">
+
+        <section class="banner2">
+          <h1 class="nome2">ResiliaFlix</h1>
+          <p class="test2">
             Sua plataforma de filmes. <br />Nós levamos o filme e você a pipoca
           </p>
+          <div class="next">
+            <h3>></h3>
+          </div>
+          <div class="prev">
+            <h3><</h3>
+          </div>
         </section>
-        
       </section>
       <section class="carrosel container-fluid">
         <ul class="carrosel-itens">
@@ -233,6 +234,9 @@
     <script src="../java_script/models/redireciona_model.js"></script>
     <script src="../java_script/views/redireciona_view.js"></script>
     <script src="../main.redireciona.js"></script>
+    <script src="../java_script/controllers/slide_controller.js"></script>
+    <script src="../java_script/models/slide_model.js"></script>
+    <script src="../java_script/views/slide_view.js"></script>
     <script src="../main_slide.js"></script>
   </body>
 </html>

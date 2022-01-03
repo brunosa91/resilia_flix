@@ -4,6 +4,8 @@
   position: fixed;
   background-color: rgba(40, 2, 41, 0.5);
   z-index: 10;
+  display: flex;
+  align-items: center;
 }
 
 .transparencia-navbar {
@@ -14,11 +16,18 @@
   z-index: 10;
 }
 
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
   color: aliceblue;
   font-family: 'Righteous', cursive;
   font-size: 30px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .logo:hover {
