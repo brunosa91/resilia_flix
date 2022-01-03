@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   height: 650px;
-  background-color: #6a11cb;
+  background-color: hsl(269, 85%, 43%);
   background: radial-gradient(rgb(101, 14, 104), rgba(12, 23, 85, 1));
   align-items: center;
   justify-content: center;
@@ -12,9 +12,24 @@
   margin-top: 5%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   width: 70%;
   height: 75%;
   border: 2px solid rgb(182, 108, 224);
+  box-shadow: inset 0 0 1em rgb(101, 14, 104), 0 0 1em rgba(12, 23, 85, 1);
+  position: relative;
+}
+
+.poster {
+  position: absolute;
+  margin-top: 12px;
+  display: flex;
+  background-color: rgb(177, 71, 180, 0.4);
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
   box-shadow: inset 0 0 1em rgb(101, 14, 104), 0 0 1em rgba(12, 23, 85, 1);
 }
 
@@ -23,13 +38,15 @@
   width: 100%;
   height: 10%;
   text-align: center;
-  color: white;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
+  font-family: 'Righteous', cursive;
 }
 
 .box {
   margin-top: 20px;
-  padding: 20px;
+  padding: 25px;
   display: flex;
   width: 100%;
   height: 80%;
@@ -40,23 +57,23 @@
 .texto {
   width: 70%;
   height: 100%;
-  color: rgb(179, 189, 197);
+  color: rgb(255, 255, 255);
   padding: 0, 30px, 30px, 30px;
 }
 
 .sinopse {
   text-align: justify;
   text-indent: 1.2em;
+  font-size: 18px;
   padding: 10px;
   padding-bottom: 20px;
-  font-weight: bolder;
 }
 
 .texto > p {
   text-align: justify;
   padding-left: 10px;
   padding-right: 10px;
-  font-weight: bolder;
+  color: rgb(255, 255, 255);
 }
 .imagem {
   display: none;
@@ -74,7 +91,7 @@
 
 .info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 90%;
   height: 5%;

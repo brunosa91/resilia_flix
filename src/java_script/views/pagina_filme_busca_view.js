@@ -25,15 +25,22 @@ class View {
   }
   semBanner(filme) {
     $('.nomeFilme').text(filme.novoTitulo());
+    $('.sinopse').text(filme.novoSinopse());
     $('.imagem-erro').css('display', 'flex');
     $('.imagem').css('display', 'none');
-    $('.sinopse').text(filme.novoSinopse());
     const ano = $('<p>').text(`Ano: ${filme.novoAno()}`);
     const tipo = $('<p>').text(filme.novoTipo());
     const duracao = $('<p>').text(filme.novoDuracao());
-    console.log(filme.novoAno());
+    const diretor = $('<p>').text(`Director: ${filme.novoDiretor()}`);
+    const genero = $('<p>').text(filme.novoGenero());
+    const avaliacao = $('<p>').text(`Metacritic: ${filme.novoAvaliacao()}`);
+    const ator = $('<p>').text(`Atores: ${filme.novoAtor()}`);
     $('.info').append(ano);
     $('.info').append(tipo);
     $('.info').append(duracao);
+    $('.info').append(avaliacao);
+    $('.texto').append(diretor);
+    $('.texto').append(genero);
+    $('.texto').append(ator);
   }
 }

@@ -42,7 +42,7 @@ class Model {
     this.tipo = objetoFilme.Type;
     this.response = objetoFilme.Response;
     this.ator = objetoFilme.Actors;
-    this.avaliacao - objetoFilme.Ratings[0];
+    this.avaliacao = objetoFilme.Ratings[0].Value;
     console.log(this.avaliacao);
   }
   novoTitulo() {
