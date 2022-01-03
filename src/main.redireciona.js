@@ -19,11 +19,12 @@ $('.info2').click((e) => {
     '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
 });
 
-$('.inf3').click((e) => {
+$('.info3').click((e) => {
   e.preventDefault();
   const nomeFilme = $('.nf3').html();
   window.location.href =
     '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+  console.log(nomeFilme);
 });
 
 $('.info4').click((e) => {

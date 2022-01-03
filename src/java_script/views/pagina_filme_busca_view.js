@@ -13,11 +13,15 @@ class View {
     const duracao = $('<p>').text(filme.novoDuracao());
     const diretor = $('<p>').text(`Diretor: ${filme.novoDiretor()}`);
     const genero = $('<p>').text(filme.novoGenero());
+    const avaliacao = $('<p>').text(`Metacritic: ${filme.novoAvaliacao()}`);
+    const ator = $('<p>').text(`Atores: ${filme.novoAtor()}`);
     $('.info').append(ano);
     $('.info').append(tipo);
     $('.info').append(duracao);
+    $('.info').append(avaliacao);
     $('.texto').append(diretor);
     $('.texto').append(genero);
+    $('.texto').append(ator);
   }
   semBanner(filme) {
     $('.nomeFilme').text(filme.novoTitulo());

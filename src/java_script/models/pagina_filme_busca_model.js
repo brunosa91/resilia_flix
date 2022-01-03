@@ -5,10 +5,12 @@ class Model {
     this.sinopse = '';
     this.diretor = '';
     this.genero = '';
+    this.avaliacao = '';
     this.capa = '';
     this.ano = '';
     this.tipo = '';
     this.duracao = '';
+    this.ator = '';
     this.response = '';
   }
 
@@ -39,6 +41,9 @@ class Model {
     this.duracao = objetoFilme.Runtime;
     this.tipo = objetoFilme.Type;
     this.response = objetoFilme.Response;
+    this.ator = objetoFilme.Actors;
+    this.avaliacao - objetoFilme.Ratings[0];
+    console.log(this.avaliacao);
   }
   novoTitulo() {
     return this.titulo;
@@ -73,5 +78,12 @@ class Model {
 
   novoResponse() {
     return this.response;
+  }
+
+  novoAvaliacao() {
+    return this.avaliacao;
+  }
+  novoAtor() {
+    return this.ator;
   }
 }
