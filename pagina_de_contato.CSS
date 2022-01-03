@@ -1,21 +1,21 @@
 @-webkit-keyframes estilohbo {
-    0%{background-position:0% 48%}
-    50%{background-position:100% 53%}
-    100%{background-position:0% 48%}
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 @-moz-keyframes estilohbo {
-    0%{background-position:0% 48%}
-    50%{background-position:100% 53%}
-    100%{background-position:0% 48%}
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 @keyframes estilohbo {
-    0%{background-position:0% 48%}
-    50%{background-position:100% 53%}
-    100%{background-position:0% 48%}
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 body {
-    background: linear-gradient(270deg, #b90cf9, #6a0490, #37024b, #15011c);
-    background-size: 800% 800%;
+    background: linear-gradient(89deg, rgb(153, 23, 153), #650e68);
+    background-size: 400% 400%;
 
     -webkit-animation: estilohbo 30s ease infinite;
     -moz-animation: estilohbo 30s ease infinite;
@@ -24,33 +24,62 @@ body {
 
 
 nav{
-    background-color: rgb(94, 3, 94);
-        height: 90px;
+    background-color: rgb(11, 22, 89);
+        height: 70px;
 }
 main{
-            font-family: 'Questrial', sans-serif; text-shadow: violet 1px 1px;
                 display: flex;
                     justify-content: space-between;
                         line-height: 20px
                     
 }
 .card-1, .card-2, .card-3, .card-4{
-    box-shadow: grey 2px 2px 5px; margin-top: 30px
+    box-shadow: violet 2px 2px 5px; margin-top: 30px; padding: 0px 5px 5px 5px; background-color: rgb(2, 2, 87)
 }
+.navbarDarkDropdownMenuLink{
+    margin-left: 500px
+}
+
 .immg{
-    height: 35px;
+    height: 35px; ;
 }
+.immg:hover{height: 45px}
 a{
-    font-family: 'Questrial', sans-serif; text-shadow: violet 2px 2px
+    font-family: 'Righteous', cursive; text-shadow: violet 2px 2px; 
 }
 .card-title{
+    font-family: 'Press Start 2P', cursive;
     text-shadow: rgb(83, 2, 83) 3px 3px;
-        color: rgb(250, 222, 9);
-            font-size: 2.5em
+        color: rgb(251, 255, 0);
+            font-size: 1.5em
 }
 .card-text{
-    font-size: 1.5em; color: blue
+    font-size: 20px; color: blue;
+    font-family: 'Varela Round', sans-serif;
+    text-shadow: violet 2px 2px
+
+        
+}
+#content{
+   display: flex; justify-content: center;
 }
 .card-body{
-    background-color: rgb(56, 2, 63);
+    background-color: rgba(12, 23, 85, 01); 
+}
+.card-title-1{
+    font-family: 'Righteous', cursive; color: white; 
+}
+.card-img-top{
+    height: 300px; object-fit: cover; object-position: 2px 8px; 
+}
+#tentativa{
+    border-radius: 50%
+}
+@media (max-width: 480px){
+    main{display: flex; flex-direction: column; width: auto; justify-content: center; align-items: center}
+    .card{width: auto}
+    nav{padding:0px 0px}
+    .container-fluid{width: auto}
+    body{width: auto}
+    .immg{height: 10px; height: 30px}
 }
