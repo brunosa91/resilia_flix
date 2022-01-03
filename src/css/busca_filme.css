@@ -40,23 +40,22 @@
 .texto {
   width: 70%;
   height: 100%;
-  color: white;
+  color: rgb(179, 189, 197);
   padding: 0, 30px, 30px, 30px;
 }
 
 .sinopse {
-  color: rgb(255, 255, 255);
   text-align: justify;
   text-indent: 1.2em;
   padding: 10px;
   padding-bottom: 20px;
   font-weight: bolder;
 }
+
 .texto > p {
   text-align: justify;
   padding-left: 10px;
   padding-right: 10px;
-  color: whitesmoke;
   font-weight: bolder;
 }
 .imagem {

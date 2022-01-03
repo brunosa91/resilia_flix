@@ -11,7 +11,7 @@ class View {
     const ano = $('<p>').text(`Ano: ${filme.novoAno()}`);
     const tipo = $('<p>').text(filme.novoTipo());
     const duracao = $('<p>').text(filme.novoDuracao());
-    const diretor = $('<p>').text(`Diretor: ${filme.novoDiretor()}`);
+    const diretor = $('<p>').text(`Director: ${filme.novoDiretor()}`);
     const genero = $('<p>').text(filme.novoGenero());
     const avaliacao = $('<p>').text(`Metacritic: ${filme.novoAvaliacao()}`);
     const ator = $('<p>').text(`Atores: ${filme.novoAtor()}`);
