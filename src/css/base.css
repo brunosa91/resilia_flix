@@ -144,10 +144,10 @@ input:hover::placeholder {
   top: 20%;
   right: 5%;
   z-index: 4;
-  /* background-image: url('../img/menu.png');
-  background-size: contain;
-  object-fit: contain;
-  object-position: center; */
+}
+
+.btn-sandwich0:hover {
+  cursor: pointer;
 }
 
 .btn-sandwich1 {
@@ -161,6 +161,10 @@ input:hover::placeholder {
   background-size: contain;
   top: 15px;
   z-index: 4;
+}
+
+.btn-sandwich1:hover {
+  cursor: pointer;
 }
 
 .sanduiche {
@@ -222,14 +226,8 @@ input:hover::placeholder {
   background-position: center;
 }
 
-.motor-pesquisa {
-  height: 60px;
-  width: 80%;
-  display: none;
-  background-image: url('../img/motor-de-pesquisa.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+.motor-pesquisa:hover {
+  cursor: pointer;
 }
 
 .buscaS {
