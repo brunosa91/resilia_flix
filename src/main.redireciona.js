@@ -141,6 +141,8 @@ $('.info19').click((e) => {
 $('.btn-busca').click((e) => {
   e.preventDefault();
   const nomeFilme = $('#valFilme').val();
-  window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+  if (nomeFilme != '') {
+    window.location.href =
+      '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+  }
 });

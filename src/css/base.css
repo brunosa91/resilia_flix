@@ -107,26 +107,31 @@ input:hover::placeholder {
 }
 
 .btn-sandwich0 {
-  width: 50px;
-  height: 50px;
-  display: flex;
+  width: 55px;
+  height: 55px;
+  display: none;
   position: absolute;
   border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(177, 71, 180, 0.4);
   top: 20%;
   right: 5%;
   z-index: 4;
+  /* background-image: url('../img/menu.png');
+  background-size: contain;
+  object-fit: contain;
+  object-position: center; */
 }
 
 .btn-sandwich1 {
-  width: 50px;
-  height: 50px;
-  display: none;
+  width: 55px;
+  height: 55px;
+  display: flex;
   position: relative;
   border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(177, 71, 180, 0.4);
   top: 15px;
   z-index: 4;
+  /* background-image: url('../img/menu.png'); */
 }
 
 .sanduiche {
@@ -161,12 +166,21 @@ input:hover::placeholder {
   text-decoration: none;
   color: white;
 }
+.motor-pesquisa {
+  height: 60px;
+  width: 80%;
+  display: none;
+  background-image: url('../img/motor-de-pesquisa.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 
 .buscaS {
-  height: 150px;
+  height: 100px;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
@@ -174,18 +188,29 @@ input:hover::placeholder {
 .buscaS > input {
   width: 80%;
   height: 40px;
-  display: none;
+  display: flex;
+  text-align: center;
 }
 
 .buscaS > button {
   border: none;
-  height: 60px;
+  height: 40px;
+  width: 90%;
+  border-color: white;
+  border-style: solid;
+}
+.buscaAbs {
+  border-radius: 25px;
+  display: none;
+  height: 80px;
   width: 80%;
-  background-image: url('../img/motor-de-pesquisa.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  object-fit: contain;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  bottom: 50%;
+  left: 10%;
+  background-color: rgba(20, 2, 41, 0.8);
 }
 
 footer {
@@ -251,7 +276,18 @@ footer {
     color: aliceblue;
     transition: 1s;
   }
+
   .btn-sandwich0 {
     display: flex;
+  }
+}
+
+@media (max-width: 510px) {
+  .motor-pesquisa {
+    display: flex;
+  }
+
+  .buscaS {
+    display: none;
   }
 }

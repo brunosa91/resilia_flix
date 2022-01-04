@@ -22,6 +22,7 @@ class View {
     $('.texto').append(diretor);
     $('.texto').append(genero);
     $('.texto').append(ator);
+    $('.erro').css('display', 'none');
   }
   semBanner(filme) {
     $('.nomeFilme').text(filme.novoTitulo());
@@ -42,5 +43,14 @@ class View {
     $('.texto').append(diretor);
     $('.texto').append(genero);
     $('.texto').append(ator);
+    $('.erro').css('display', 'none');
+  }
+
+  mostraErro() {
+    $('.erro').css('display', 'flex');
+    $('.imagem-erro').css('display', 'none');
+    $('.imagem').css('display', 'none');
+    $('.sinopse').text('');
+    $('.nomeFilme').text('');
   }
 }

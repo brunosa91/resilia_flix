@@ -25,8 +25,12 @@ class Model {
     requisicao.onload = () => {
       if (requisicao.status == 200) {
         const response = JSON.parse(requisicao.response);
-        console.log(response);
-        this._atualizaFilmes(response);
+        if (response.Response == 'True') {
+          console.log(response);
+          this._atualizaFilmes(response);
+        } else {
+          return (this.response = false);
+        }
       }
     };
     requisicao.send();

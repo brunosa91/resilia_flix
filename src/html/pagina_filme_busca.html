@@ -19,8 +19,6 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-
-    <!-- <link href="../css/pagina_filme.css" rel="stylesheet" /> -->
     <link href="../css/busca_filme.css" rel="stylesheet" />
 
     <link href="../css/pagina_filmes.css" rel="stylesheet" />
@@ -29,23 +27,19 @@
     <title>ResiliaFlix</title>
   </head>
   <body>
+    <form class="buscaAbs">
+      <input
+            id="valFilme"
+            type="search"
+            placeholder="Digite o nome do filme"
+          />
+      <button class="btn-busca" type="submit">BUSCAR</button>
+    </form>
     <header>
       <nav class="opacity-navbar">
         <div class="cabecalho container-fluid">
           <a class="logo">ResiliaFlix</a>
-          <!-- <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-
-          <div class="barra-nav">
+           <div class="barra-nav">
             <div class="tamanho-nav">
               <a class="home"> HOME</a>
               <a class="contato"> CONTATO</a>
@@ -54,12 +48,30 @@
                   id="valFilme"
                   type="search"
                   placeholder="Digite o nome do filme"
-                  aria-label="Search"
                 />
                 <button class="btn-busca" type="submit">BUSCAR</button>
               </form>
             </div>
           </div>
+          <div class='btn-sandwich0'></div>
+          <div class="sanduiche">  
+            <div class='btn-sandwich1'></div>
+            <div class='pag'>
+              <a href ='' class='homeS'> HOME</a>
+              <a href ='' class='loginS'> LOGIN</a>
+              <a href ='' class='ajudaS'> AJUDA</a>
+              <a href ='' class="contatoS"> CONTATO</a>
+            </div>
+              <div class='motor-pesquisa'></div>
+              <form class="buscaS">
+                <input
+                      id="valFilme"
+                      type="search"
+                      placeholder="Digite o nome do filme"
+                    />
+                <button class="btn-busca" type="submit">BUSCAR</button>
+              </form>
+          </div> 
         </div>
       </nav>
     </header>
@@ -68,13 +80,14 @@
       <section class="conteudo container-fluid">
         <div class="poster">
           <h2 class="nomeFilme"></h2>
+          <h4 class='erro'>Filme não encontrado, tente novamente digitando o nome do filme em inglês.</h4>
           <div class="box">
             <div class="texto">
               <div class="sinopse"></div>
               <div></div>
             </div>
             <img class="imagem img-fluid" src="" />
-            <img class="imagem-erro img-fluid" src="../img/será.png" />
+            <img class="imagem-erro img-fluid" src="../img/sem-imagem.png" />
           </div>
           <div class="info"></div>
         </div>
@@ -111,5 +124,6 @@
     <script src="../java_script/models/redireciona_model.js"></script>
     <script src="../java_script/views/redireciona_view.js"></script>
     <script src="../main.redireciona.js"></script>
+    <script src='../main_menu_sandwich.js'></script>
   </body>
 </html>
