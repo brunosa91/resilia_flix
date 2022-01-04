@@ -112,3 +112,62 @@
   text-transform: capitalize;
   padding-bottom: 15px;
 }
+
+@media (max-width: 850px) {
+  .conteudo {
+    width: 80%;
+  }
+  .nomeFilme {
+    font-size: 30px;
+    margin: 0;
+  }
+  .box {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+
+  .imagem {
+    display: none;
+    height: 60%;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  .texto {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .sinopse {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .text > p {
+    padding: 0;
+    margin: 0;
+  }
+  .info {
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 0;
+  }
+  .footer {
+    height: 100px;
+  }
+  #icon {
+    display: flex;
+  }
+}
+
+@media (max-width: 520px) {
+  .info {
+    display: none;
+  }
+
+  .imagem {
+    display: none;
+    height: 60%;
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+}
