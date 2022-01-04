@@ -50,7 +50,7 @@ a{
 .card-title{
     font-family: 'Press Start 2P', cursive;
     text-shadow: rgb(83, 2, 83) 3px 3px;
-        color: rgb(251, 255, 0);
+        color: white;
             font-size: 1.5em
 }
 .card-text{
