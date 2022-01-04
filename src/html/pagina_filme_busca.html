@@ -27,14 +27,6 @@
     <title>ResiliaFlix</title>
   </head>
   <body>
-    <form class="buscaAbs">
-      <input
-            id="valFilme"
-            type="search"
-            placeholder="Digite o nome do filme"
-          />
-      <button class="btn-busca" type="submit">BUSCAR</button>
-    </form>
     <header>
       <nav class="opacity-navbar">
         <div class="cabecalho container-fluid">
@@ -65,17 +57,16 @@
               <div class='motor-pesquisa'></div>
               <form class="buscaS">
                 <input
-                      id="valFilme"
+                      id="valFilme1"
                       type="search"
                       placeholder="Digite o nome do filme"
                     />
-                <button class="btn-busca" type="submit">BUSCAR</button>
+                <button class="btn-busca1" type="submit">BUSCAR</button>
               </form>
           </div> 
         </div>
       </nav>
     </header>
-
     <main class="principal container-fluid">
       <section class="conteudo container-fluid">
         <div class="poster">
@@ -92,6 +83,14 @@
           <div class="info"></div>
         </div>
       </section>
+      <form class="buscaAbs">
+        <input
+              id="valFilme2"
+              type="search"
+              placeholder="Digite o nome do filme"
+            />
+        <button class="btn-busca2" type="submit">BUSCAR</button>
+      </form>
     </main>  
     <footer>
       <section class="rodape">
@@ -115,15 +114,15 @@
     <script src="../java_script/controllers/pagina_filme_busca.js"></script>
     <script src="../java_script/models/pagina_filme_busca_model.js"></script>
     <script src="../java_script/views/pagina_filme_busca_view.js"></script>
-    <script src="../main_busca.js"></script>
+    <script src="../busca_main.js"></script>
     <script src="../java_script/controllers/navbar_controller.js"></script>
     <script src="../java_script/models/navbar-model.js"></script>
     <script src="../java_script/views/navbar-view.js"></script>
-    <script src="../main_navbar.js"></script>
-    <script src="../java_script/controllers/redireciona_controller.js"></script>
-    <script src="../java_script/models/redireciona_model.js"></script>
-    <script src="../java_script/views/redireciona_view.js"></script>
-    <script src="../main.redireciona.js"></script>
-    <script src='../main_menu_sandwich.js'></script>
+    <script src="../navbar_main.js"></script>
+    <script src="../java_script/controllers/slide_controller.js"></script>
+    <script src="../java_script/models/slide_model.js"></script>
+    <script src="../java_script/views/slide_view.js"></script>
+    <script src="../slide_main.js"></script>
+    <script src='../menu_sandwich_main.js'></script>
   </body>
 </html>

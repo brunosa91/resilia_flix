@@ -28,3 +28,8 @@ $('.motor-pesquisa').click((e) => {
   $('.btn-sandwich1').css('display', 'none');
   $('.buscaAbs').css('display', 'flex');
 });
+
+$('.btn-busca2').click((e) => {
+  $('.btn-sandwich0').css('display', 'flex');
+  $('.buscaAbs').css('display', 'none');
+});

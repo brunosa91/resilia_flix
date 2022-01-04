@@ -25,12 +25,12 @@
 
     <title>ResiliaFlix</title>
   </head>
-  <body>
+  <body>    
     <header>
       <nav class="opacity-navbar">
         <div class="cabecalho container-fluid">
           <a class="logo">ResiliaFlix</a>
-          <div class="barra-nav">
+           <div class="barra-nav">
             <div class="tamanho-nav">
               <a class="home"> HOME</a>
               <a class="contato"> CONTATO</a>
@@ -42,29 +42,32 @@
                 />
                 <button class="btn-busca" type="submit">BUSCAR</button>
               </form>
-             </div>
+            </div>
           </div>
           <div class='btn-sandwich0'></div>
           <div class="sanduiche">  
             <div class='btn-sandwich1'></div>
             <div class='pag'>
-              <a class='homeS'> HOME</a>
-              <a class='loginS'> LOGIN</a>
-              <a class='ajudaS'> AJUDA</a>
-              <a class="contatoS"> CONTATO</a>
+              <a href ='' class='homeS'> HOME</a>
+              <a href ='' class='loginS'> LOGIN</a>
+              <a href ='' class='ajudaS'> AJUDA</a>
+              <a href ='' class="contatoS"> CONTATO</a>
             </div>
+              <div class='motor-pesquisa'></div>
               <form class="buscaS">
                 <input
-                      id="valFilme"
+                      id="valFilme1"
                       type="search"
                       placeholder="Digite o nome do filme"
                     />
-                <button class="btn-busca" type="submit"></button>
+                <button class="btn-busca1" type="submit">BUSCAR</button>
               </form>
-          </div>               
+          </div> 
         </div>
       </nav>
+     
     </header>
+   
     <main>
       <section class="slide">
         <section class="banner0">
@@ -212,6 +215,14 @@
           <p class="nf19"></p
         ></a>
       </section>
+      <form class="buscaAbs">
+        <input
+              id="valFilme2"
+              type="search"
+              placeholder="Digite o nome do filme"
+            />
+        <button class="btn-busca2" type="submit">BUSCAR</button>
+      </form>
     </main>
     <footer>
       <section class="rodape">
@@ -232,29 +243,26 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="../java_script/controllers/pagina_filme_busca.js"></script>
+    <script src="../java_script/controllers/pagina_filme_busca.js"></script>
     <script src="../java_script/models/pagina_filme_busca_model.js"></script>
     <script src="../java_script/views/pagina_filme_busca_view.js"></script>
-    <script src="../main_busca.js"></script> -->
+    <script src="../main_busca.js"></script>
     <script src="../java_script/controllers/navbar_controller.js"></script>
     <script src="../java_script/models/navbar-model.js"></script>
     <script src="../java_script/views/navbar-view.js"></script>
-    <script src="../main_navbar.js"></script>
+    <script src="../navbar_main.js"></script>
     <script src="../java_script/controllers/carrega_filmes_controller.js"></script>
     <script src="../java_script/models/carrega_filmes_model.js"></script>
     <script src="../java_script/views/carrega_filme_views.js"></script>
-    <script src="../main_carrega_filmes.js"></script>
+    <script src="../carrega_filme_main.js"></script>
     <script src="../java_script/controllers/carrega_carrosel_controller.js"></script>
     <script src="../java_script/models/carrega_carrosel_model.js"></script>
     <script src="../java_script/views/carrega_carrosel_views.js"></script>
-    <script src="../main_carrosel_filmes.js"></script>
-    <script src="../java_script/controllers/redireciona_controller.js"></script>
-    <script src="../java_script/models/redireciona_model.js"></script>
-    <script src="../java_script/views/redireciona_view.js"></script>
-    <script src="../main.redireciona.js"></script>
+    <script src="../carrosel_filmes_main.js"></script>
+    <script src="../redireciona_main.js"></script>
     <script src="../java_script/controllers/slide_controller.js"></script>
     <script src="../java_script/models/slide_model.js"></script>
     <script src="../java_script/views/slide_view.js"></script>
-    <script src="../main_slide.js"></script>
-    <script src='../main_menu_sandwich.js'></script>
+    <script src="../slide_main.js"></script>
+    <script src='../menu_sandwich_main.js'></script>
 </html>

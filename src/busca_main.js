@@ -11,3 +11,15 @@ $('.btn-busca').click((e) => {
   const filme = new Controller($('#valFilme').val());
   filme.qualeOfilme();
 });
+
+$('.btn-busca1').click((e) => {
+  e.preventDefault();
+  const filme = new Controller($('#valFilme1').val());
+  filme.qualeOfilme();
+});
+
+$('.btn-busca2').click((e) => {
+  e.preventDefault();
+  const filme = new Controller($('#valFilme2').val());
+  filme.qualeOfilme();
+});

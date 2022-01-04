@@ -146,3 +146,23 @@ $('.btn-busca').click((e) => {
       '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
   }
 });
+
+$('.btn-busca1').click((e) => {
+  e.preventDefault();
+  const nomeFilme = $('#valFilme1').val();
+  console.log(nomeFilme);
+  if (nomeFilme != '') {
+    window.location.href =
+      '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+  }
+});
+
+$('.btn-busca2').click((e) => {
+  e.preventDefault();
+  const nomeFilme = $('#valFilme2').val();
+  console.log(nomeFilme);
+  if (nomeFilme != '') {
+    window.location.href =
+      '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+  }
+});

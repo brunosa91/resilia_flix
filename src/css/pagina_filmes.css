@@ -100,8 +100,8 @@
 .next {
   position: absolute;
   background-color: rgb(9, 15, 51, 0.7);
-  height: 7%;
-  width: 5%;
+  height: 45px;
+  width: 40px;
   z-index: 1;
   right: 0;
   margin-right: 3px;
@@ -115,8 +115,8 @@
 
 .prev {
   position: absolute;
-  height: 7%;
-  width: 5%;
+  height: 45px;
+  width: 40px;
   z-index: 1;
   margin-left: 3px;
   background-color: rgb(9, 15, 51, 0.7);
