@@ -139,6 +139,8 @@ input:hover::placeholder {
   position: absolute;
   border-radius: 50px;
   background-color: rgb(177, 71, 180, 0.4);
+  background-image: url('../img/menu.png');
+  background-size: contain;
   top: 20%;
   right: 5%;
   z-index: 4;
@@ -155,9 +157,10 @@ input:hover::placeholder {
   position: relative;
   border-radius: 50px;
   background-color: rgb(177, 71, 180, 0.4);
+  background-image: url('../img/menu.png');
+  background-size: contain;
   top: 15px;
   z-index: 4;
-  /* background-image: url('../img/menu.png'); */
 }
 
 .sanduiche {
