@@ -222,6 +222,16 @@ input:hover::placeholder {
   background-position: center;
 }
 
+.motor-pesquisa {
+  height: 60px;
+  width: 80%;
+  display: none;
+  background-image: url('../img/motor-de-pesquisa.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 .buscaS {
   height: 100px;
   width: 100%;
@@ -245,6 +255,7 @@ input:hover::placeholder {
   border-color: white;
   border-style: solid;
 }
+
 .buscaAbs {
   border-radius: 25px;
   display: none;
@@ -253,7 +264,7 @@ input:hover::placeholder {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  top: 80vh;
+  top: 65vh;
   left: 10%;
   position: absolute;
   background-color: rgba(20, 2, 41, 0.8);
