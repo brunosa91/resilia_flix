@@ -106,6 +106,88 @@ input:hover::placeholder {
   transition: 1s;
 }
 
+.btn-sandwich0 {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 20%;
+  right: 5%;
+  z-index: 4;
+}
+
+.btn-sandwich1 {
+  width: 50px;
+  height: 50px;
+  display: none;
+  position: relative;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 15px;
+  z-index: 4;
+}
+
+.sanduiche {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  height: 100vh;
+  background-color: rgba(20, 2, 41, 0.8);
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.pag {
+  margin-top: 80px;
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.homeS,
+.contatoS,
+.loginS,
+.ajudaS {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.buscaS {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buscaS > input {
+  width: 80%;
+  height: 40px;
+  display: none;
+}
+
+.buscaS > button {
+  border: none;
+  height: 60px;
+  width: 80%;
+  background-image: url('../img/motor-de-pesquisa.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  object-fit: contain;
+}
+
 footer {
   height: 200px;
   width: 100%;
@@ -116,7 +198,7 @@ footer {
 }
 
 .rodape {
-  width: 50%;
+  width: 80%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -150,54 +232,26 @@ footer {
   color: rgb(177, 71, 180);
 }
 
-/* .menu {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  border-color: white;
-  border-style: solid;
-  right: 20px;
-}
-#checkbox {
-  display: none;
-}
-label {
-  cursor: pointer;
-  position: relative;
-  width: 30px;
-  height: 40px;
-  display: block;
-}
-
-.hamburguer {
-  position: absolute;
-  display: block;
-  height: 2px;
-  width: 100%;
-  border-radius: 30px;
-  background-color: rgb(185, 13, 13);
-  transition: 0.35s ease-in-out;
-} */
-
-@media (max-width: 1000px) {
+@media (max-width: 790px) {
   .transparencia-navbar {
+    background: none;
+  }
+
+  .opacity-navbar {
+    background: none;
+  }
+  .barra-nav {
     display: none;
   }
-
-  .busca {
-    height: 50px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .logo {
+    color: rgb(177, 71, 180);
   }
 
-  input {
-    margin-bottom: 5px;
-    width: 120px;
+  .logo:hover {
+    color: aliceblue;
+    transition: 1s;
   }
-
-  .btn-busca {
-    width: 100px;
+  .btn-sandwich0 {
+    display: flex;
   }
 }

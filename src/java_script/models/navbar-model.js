@@ -9,3 +9,4 @@ class NavbarModel {
     }
   }
 }
+// & ($(window).innerWidth() > 790)

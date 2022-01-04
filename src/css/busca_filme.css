@@ -17,6 +17,7 @@
   height: 75%;
   border: 2px solid rgb(182, 108, 224);
   box-shadow: inset 0 0 1em rgb(101, 14, 104), 0 0 1em rgba(12, 23, 85, 1);
+  border-radius: 5px;
   position: relative;
 }
 
@@ -95,7 +96,8 @@
   align-items: center;
   width: 90%;
   height: 5%;
-  color: white;
+  color: rgb(179, 146, 233);
+  font-weight: bold;
   text-transform: capitalize;
   padding-bottom: 15px;
 }
