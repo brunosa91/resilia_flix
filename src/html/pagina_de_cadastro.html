@@ -30,14 +30,7 @@
   </head>
   <body>
     <header class="cabecalho">
-      <nav
-        class="
-          navbar navbar-expand-lg
-          fixed-top
-          navbar-dark
-          bg-color bg-opacity-75
-        "
-      >
+      <nav class="navbar navbar-expand-lg navbar-dark bg-color bg-opacity-75">
         <div class="container-fluid">
           <a class="navbar-brand text-white fs-3 fonte-resiliaflix" href="#"
             >ResiliaFlix</a
@@ -46,20 +39,23 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span> -->
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
-            id="navbarNavAltMarkup"
+            id="navbarNav"
           >
-            <div class="navbar-nav align-items-center">
-              <a class="nav-link text-white fonte-texto" href="#">ENTRAR</a>
-              <a class="nav-link active" aria-current="page" href="#"></a>
+            <div class="navbar-nav align-items-end">
+              <a
+                class="nav-link text-white fonte-texto"
+                href="pagina_de_login.html"
+                >ENTRAR</a
+              >
             </div>
           </div>
         </div>
@@ -68,7 +64,7 @@
     <main class="corpo">
       <form action="" class="form">
         <fieldset class="fieldset_nome">
-          <label for="nome">Nome</label>
+          <label for="nome">Nome completo</label>
           <input type="text" class="input" id="nome" required />
         </fieldset>
         <fieldset class="fieldset_email">
@@ -78,7 +74,7 @@
             type="text"
             class="input"
             placeholder="ex: xxxx@xxxx.com"
-            id="valor_email"
+            id="  "
             required
           />
 
@@ -93,7 +89,7 @@
             required
           />
           <label for="valor_confirma_senha">Confirme sua senha</label>
-          <p id="erro_confirma_senha">senha de números e maior que 6 números</p>
+          <p id="erro_confirma_senha">senha diferente</p>
           <input
             type="password"
             class="input"
@@ -115,6 +111,7 @@
             class="input"
             placeholder="ex: 00000000"
             maxlength="8"
+            minlength="8"
             id="cep"
             required
           />
@@ -141,8 +138,17 @@
         <button type="submit" id="cadastrar">cadastrar</button>
       </form>
     </main>
-    <footer class="rodape">
-      <p>Direitos Reservados</p>
+    <footer>       
+      <section class="rodape">         
+        <a href=''><div id="icon"></div></a>         
+        <div class="links">           
+          <a href=''> Home </a>           
+          <a href=''> Contato </a>           
+          <a href=''> Cadastre-se </a>           
+          <a href=''> Login </a>         
+        </div>         
+        <p class="copyrigth"> &#169 Todos os direitos reservados         </p>       
+      </section>     
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

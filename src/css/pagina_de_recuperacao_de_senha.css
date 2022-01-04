@@ -71,12 +71,14 @@ body {
   display: none;
   color: red;
 }
-#erro_senha {
+
+#email_enviado {
   display: none;
-  color: red;
+  color: green;
+  font-size: 25px;
 }
 
-#login {
+#recuperacao {
   margin-top: 10px;
   background-color: #0b1659;
   border: none;
@@ -89,27 +91,9 @@ body {
   font-weight: 100;
   font-family: "Varela Round", sans-serif;
 }
-#login:hover {
+#recuperacao:hover {
   color: rgb(177, 71, 180);
 }
-#esqueci_senha {
-  margin-top: 10px;
-  border: none;
-  font-weight: 100;
-  font-family: "Varela Round", sans-serif;
-  text-align: center;
-  text-decoration: none;
-  color: #5797b1;
-}
-footer {
-  height: 200px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(12, 23, 85, 1);
-}
-
 footer {
   height: 200px;
   width: 100%;
@@ -153,7 +137,6 @@ footer {
 .copyrigth {
   color: rgb(177, 71, 180);
 }
-
 @media (max-width: 750px) {
   .cabecalho {
     height: 90px;

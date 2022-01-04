@@ -11,7 +11,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/pagina_de_login.css" />
+    <link rel="stylesheet" href="../css/pagina_de_recuperacao_de_senha.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
@@ -51,16 +51,14 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span> 
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
             id="navbarNavAltMarkup"
           >
             <div class="navbar-nav align-items-end">
-              <a
-                class="nav-link text-white fonte-texto"
-                href="pagina_de_cadastro.html"
+              <a class="nav-link text-white fonte-texto" href="pagina_de_cadastro.html"
                 >CADASTRE-SE</a
               >
             </div>
@@ -78,41 +76,26 @@
             id="valor_email"
             required
           />
-          <label for="valor_email">Digite seu e-mail</label>
-          <p id="erro_email">E-mail ou senha inválido</p>
+          <label class="valor_email"for="valor_email">Digite seu e-mail</label>
+          <p id="erro_email">E-mail inválido</p>
+          <p id="email_enviado">SUA SENHA FOI ENVIADA PARA SEU E-MAIL</p>
 
-          <input
-            type="password"
-            class="input"
-            id="valor_senha"
-            placeholder="ex: 0000000"
-            required
-          />
-          <label for="valor_senha">Digite sua senha</label>
-          <p id="erro_senha">senha de números e maior que 6 números</p>
-        </fieldset>
 
-        <button type="button" id="login">LOGIN</button>
-        <a
-          type="submit"
-          id="esqueci_senha"
-          href="pagina_de_recuperacao_de_senha.html"
-          >Esqueci a senha</a
-        >
+        <button type="button" id="recuperacao">ENVIAR</button>
       </form>
     </main>
-    <footer>       
-      <section class="rodape">         
-        <a href=''><div id="icon"></div></a>         
-        <div class="links">           
-          <a href=''> Home </a>           
-          <a href=''> Contato </a>           
-          <a href=''> Cadastre-se </a>           
-          <a href=''> Login </a>         
-        </div>         
-        <p class="copyrigth"> &#169 Todos os direitos reservados         </p>       
-      </section>     
-    </footer>
+    <footer>
+    <section class="rodape">         
+      <a href=''><div id="icon"></div></a>         
+      <div class="links">           
+        <a href=''> Home </a>           
+        <a href=''> Contato </a>           
+        <a href=''> Cadastre-se </a>           
+        <a href=''> Login </a>         
+      </div>         
+      <p class="copyrigth"> &#169 Todos os direitos reservados         </p>       
+    </section>     
+  </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -126,9 +109,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../java_script/models/pagina_de_login_model.js"></script>
-    <script src="../java_script/controllers/pagina_de_login_controller.js"></script>
-    <script src="../java_script/views/pagina_de_login_view.js"></script>
-    <script src="../java_script/pagina_de_login_main.js"></script>
+    <script src="../java_script/models/pagina_de_recuperacao_de_senha_model.js"></script>
+    <script src="../java_script/controllers/pagina_de_recuperacao_de_senha_controller.js"></script>
+    <script src="../java_script/views/pagina_de_recuperacao_de_senha_view.js"></script>
+    <script src="../java_script/pagina_de_recuperacao_de_senha_main.js"></script>
   </body>
 </html>
