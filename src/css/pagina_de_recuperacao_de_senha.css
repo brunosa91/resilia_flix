@@ -19,7 +19,7 @@ body {
   height: 70px;
 }
 .fonte-resiliaflix {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Righteous", cursive;
 }
 
 .corpo {
@@ -72,12 +72,6 @@ body {
   color: red;
 }
 
-#email_enviado {
-  display: none;
-  color: green;
-  font-size: 25px;
-}
-
 #recuperacao {
   margin-top: 10px;
   background-color: #0b1659;
@@ -93,6 +87,18 @@ body {
 }
 #recuperacao:hover {
   color: rgb(177, 71, 180);
+}
+#email_enviado {
+  display: none;
+  color: #f2f2f2;
+  font-size: 25px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email_enviado > img {
+  height: 70px;
+  width: 70px;
 }
 footer {
   height: 200px;
