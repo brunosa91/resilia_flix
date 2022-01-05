@@ -339,9 +339,9 @@ footer {
 }
 
 @media (max-width: 510px) {
-  /* .motor-pesquisa {
+  .motor-pesquisa {
     display: flex;
-  } */
+  }
 
   .buscaS {
     display: none;
