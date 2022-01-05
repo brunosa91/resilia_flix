@@ -15,11 +15,11 @@ class FilmesController {
   qualFilme() {
     const objeto = [];
     for (let i = 0; i < this.filme.length; i++) {
-      const model = new FilmesModel(this.filme[i]);
+      const model = new EscolheFilmesModel(this.filme[i]);
       model.buscaFilme();
       objeto.push(model);
     }
-    const view = new FilmesView();
-    view.carregaFilmes(objeto);
+    const view = new MostraFilmesView();
+    view.carregaCapa(objeto);
   }
 }

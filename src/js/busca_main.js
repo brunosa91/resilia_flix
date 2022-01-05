@@ -3,7 +3,7 @@ $(document).ready((e) => {
   const controller = new Controller(filme);
   console.log(filme);
   controller.qualeOfilme();
-  window.location.href = "resiliaflix/src/html/pagina_filme_busca.html#";
+  window.location.href = "pagina_filme_busca.html#";
 });
 
 $(".btn-busca").click((e) => {

@@ -3,7 +3,7 @@ class View {
     if (resultadoValidaEmailSenha == "email e senha válidos") {
       $("#erro_email").css("display", "none");
       $("#erro_senha").css("display", "none");
-      window.location.href = "pagina_de_cadastro.html";
+      window.location.href = "pagina_filmes.html";
     } else {
       $("#erro_email").css("display", "flex");
       $("#erro_senha").css("display", "flex");
