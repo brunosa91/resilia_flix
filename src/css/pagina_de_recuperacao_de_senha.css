@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-image: radial-gradient(rgb(101, 14, 104), rgb(12, 23, 85));
+
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.cabecalho {
+  width: 100%;
+  background-color: #0b1659;
+  height: 70px;
+}
+.fonte-resiliaflix {
+  font-family: "Righteous", cursive;
+}
+
+.corpo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  width: 60%;
+}
+
+.input {
+  width: 60%;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 10px;
+  color: #5797b1;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+}
+
+.fieldset_email {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  color: #f2f2f2;
+  font-family: "Varela Round", sans-serif;
+}
+.fieldset_email > label:hover {
+  color: rgb(95, 172, 95);
+}
+
+#erro_email {
+  display: none;
+  color: red;
+}
+
+#recuperacao {
+  margin-top: 10px;
+  background-color: #0b1659;
+  border: none;
+  color: #f2f2f2;
+  border: 1px solid white;
+  height: 35px;
+  width: 200px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Varela Round", sans-serif;
+}
+#recuperacao:hover {
+  color: rgb(177, 71, 180);
+}
+#email_enviado {
+  display: none;
+  color: #f2f2f2;
+  font-size: 25px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email_enviado > img {
+  height: 70px;
+  width: 70px;
+}
+footer {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(12, 23, 85, 1);
+}
+
+.rodape {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+#icon {
+  background-image: url("../imagem/icon.jfif");
+  background-position: center;
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+}
+
+#icon > a {
+  text-decoration: none;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  color: white;
+}
+
+.links > a {
+  color: #f2f2f2f2;
+  text-decoration: none;
+}
+.copyrigth {
+  color: rgb(177, 71, 180);
+}
+@media (max-width: 750px) {
+  .cabecalho {
+    height: 90px;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
