@@ -1,6 +1,6 @@
 class Controller {
   constructor(valorinputemail, valorcep, valorSenha, valorConfirmaSenha) {
-    this.valor_input_email = valorinputemail; //$("#valor_email").val())
+    this.valor_input_email = valorinputemail;
     this.valor_input_cep = valorcep;
     this.valor_input_senha = valorSenha;
     this.valor_input_confirma_senha = valorConfirmaSenha;

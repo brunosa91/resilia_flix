@@ -171,6 +171,7 @@ footer {
 .copyrigth {
   color: rgb(177, 71, 180);
 }
+
 @media (max-width: 750px) {
   .cabecalho {
     height: 90px;

@@ -22,6 +22,7 @@ class View {
       $("#erro_email").css("display", "flex");
     }
   }
+  //solution
   mostraSenha(resultadoValidaSenha) {
     if (resultadoValidaSenha == "senha válida") {
       $("#erro_senha").css("display", "none");
