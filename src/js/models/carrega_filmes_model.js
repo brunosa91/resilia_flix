@@ -1,14 +1,14 @@
 class EscolheFilmesModel {
   constructor(nomeFilme) {
     this.filme = nomeFilme;
-    this.capa = '';
+    this.capa = "";
   }
 
   buscaFilme() {
-    let chave = '81849d08';
+    let chave = "81849d08";
     const requisicao = new XMLHttpRequest();
     requisicao.open(
-      'GET',
+      "GET",
       `http://www.omdbapi.com/?apikey=${chave}&t=${this.filme}`,
       false
     );

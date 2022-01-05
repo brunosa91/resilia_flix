@@ -1,168 +1,168 @@
-$('.info0').click((e) => {
+$(".info0").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf0').html();
+  const nomeFilme = $(".nf0").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info1').click((e) => {
+$(".info1").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf1').html();
+  const nomeFilme = $(".nf1").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info2').click((e) => {
+$(".info2").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf2').html();
+  const nomeFilme = $(".nf2").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info3').click((e) => {
+$(".info3").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf3').html();
+  const nomeFilme = $(".nf3").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
   console.log(nomeFilme);
 });
 
-$('.info4').click((e) => {
+$(".info4").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf4').html();
+  const nomeFilme = $(".nf4").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info5').click((e) => {
+$(".info5").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf5').html();
+  const nomeFilme = $(".nf5").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info6').click((e) => {
+$(".info6").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf6').html();
+  const nomeFilme = $(".nf6").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info7').click((e) => {
+$(".info7").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf7').html();
+  const nomeFilme = $(".nf7").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info8').click((e) => {
+$(".info8").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf8').html();
+  const nomeFilme = $(".nf8").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info9').click((e) => {
+$(".info9").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf9').html();
+  const nomeFilme = $(".nf9").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info10').click((e) => {
+$(".info10").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf10').html();
+  const nomeFilme = $(".nf10").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info11').click((e) => {
+$(".info11").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf11').html();
+  const nomeFilme = $(".nf11").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info12').click((e) => {
+$(".info12").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf12').html();
+  const nomeFilme = $(".nf12").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info13').click((e) => {
+$(".info13").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf13').html();
+  const nomeFilme = $(".nf13").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
-$('.info14').click((e) => {
+$(".info14").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf14').html();
+  const nomeFilme = $(".nf14").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
-});
-
-$('.info15').click((e) => {
-  e.preventDefault();
-  const nomeFilme = $('.nf15').html();
-  window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info16').click((e) => {
+$(".info15").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf16').html();
+  const nomeFilme = $(".nf15").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info17').click((e) => {
+$(".info16").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf17').html();
+  const nomeFilme = $(".nf16").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info18').click((e) => {
+$(".info17").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf18').html();
+  const nomeFilme = $(".nf17").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.info19').click((e) => {
+$(".info18").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('.nf19').html();
+  const nomeFilme = $(".nf18").html();
   window.location.href =
-    '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
 });
 
-$('.btn-busca').click((e) => {
+$(".info19").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('#valFilme').val();
-  if (nomeFilme != '') {
+  const nomeFilme = $(".nf19").html();
+  window.location.href =
+    "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
+});
+
+$(".btn-busca").click((e) => {
+  e.preventDefault();
+  const nomeFilme = $("#valFilme").val();
+  if (nomeFilme != "") {
     window.location.href =
-      '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+      "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
   }
 });
 
-$('.btn-busca1').click((e) => {
+$(".btn-busca1").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('#valFilme1').val();
+  const nomeFilme = $("#valFilme1").val();
   console.log(nomeFilme);
-  if (nomeFilme != '') {
+  if (nomeFilme != "") {
     window.location.href =
-      '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+      "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
   }
 });
 
-$('.btn-busca2').click((e) => {
+$(".btn-busca2").click((e) => {
   e.preventDefault();
-  const nomeFilme = $('#valFilme2').val();
+  const nomeFilme = $("#valFilme2").val();
   console.log(nomeFilme);
-  if (nomeFilme != '') {
+  if (nomeFilme != "") {
     window.location.href =
-      '/resilia_flix/src/html/pagina_filme_busca.html#' + nomeFilme;
+      "/resiliaflix/src/html/pagina_filme_busca.html#" + nomeFilme;
   }
 });

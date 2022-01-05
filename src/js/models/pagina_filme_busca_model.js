@@ -1,31 +1,31 @@
 class Model {
   constructor(nomeFilme) {
     this.filme = nomeFilme;
-    this.titulo = '';
-    this.sinopse = '';
-    this.diretor = '';
-    this.genero = '';
-    this.avaliacao = '';
-    this.capa = '';
-    this.ano = '';
-    this.tipo = '';
-    this.duracao = '';
-    this.ator = '';
-    this.response = '';
+    this.titulo = "";
+    this.sinopse = "";
+    this.diretor = "";
+    this.genero = "";
+    this.avaliacao = "";
+    this.capa = "";
+    this.ano = "";
+    this.tipo = "";
+    this.duracao = "";
+    this.ator = "";
+    this.response = "";
   }
 
   buscaFilme() {
-    let chave = '81849d08';
+    let chave = "81849d08";
     const requisicao = new XMLHttpRequest();
     requisicao.open(
-      'GET',
+      "GET",
       `http://www.omdbapi.com/?apikey=${chave}&t=${this.filme}`,
       false
     );
     requisicao.onload = () => {
       if (requisicao.status == 200) {
         const response = JSON.parse(requisicao.response);
-        if (response.Response == 'True') {
+        if (response.Response == "True") {
           console.log(response);
           this._atualizaFilmes(response);
         } else {
