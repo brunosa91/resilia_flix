@@ -168,6 +168,9 @@
   #icon {
     display: flex;
   }
+  .texto > p {
+    margin: 5px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -178,7 +181,18 @@
   .imagem {
     display: none;
     height: 60%;
-    padding-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .nomeFilme {
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .box {
+    margin: 0;
+  }
+  .texto > p {
+    margin: 0;
   }
 }

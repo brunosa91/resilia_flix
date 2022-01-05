@@ -346,4 +346,11 @@ footer {
   .buscaS {
     display: none;
   }
+  .btn-busca {
+    width: 80%;
+  }
+
+  .buscaAbs > input {
+    width: 80%;
+  }
 }
