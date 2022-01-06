@@ -118,7 +118,7 @@ footer {
   flex-direction: column;
 }
 #icon {
-  background-image: url("../imagem/icon.jfif");
+  background-image: url("../img/icon.jfif");
   background-position: center;
   background-size: contain;
   height: 40px;

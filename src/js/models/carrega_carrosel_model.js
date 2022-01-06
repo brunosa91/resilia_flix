@@ -5,11 +5,11 @@ class CarroselModel {
   }
 
   buscaFilme() {
-    let chave = "81849d08";
+    // let chave = "81849d08";
     const requisicao = new XMLHttpRequest();
     requisicao.open(
       "GET",
-      `http://www.omdbapi.com/?apikey=${chave}&t=${this.filme}`,
+      `http://www.omdbapi.com/?apikey=81849d08&t=${this.filme}`,
       false
     );
     requisicao.onload = () => {
