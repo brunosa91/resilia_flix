@@ -44,6 +44,14 @@ class Model {
     requisicao.send();
   }
 
+  carregarBuscaFilmes(filme) {
+    return $.ajax({
+      url: `http://www.omdbapi.com/?t=${filme}&apikey=81849d08`,
+      type: "GET",
+      dataType: "json",
+    });
+  }
+
   _atualizaFilmes(objetoFilme) {
     this.titulo = objetoFilme.Title;
     this.sinopse = objetoFilme.Plot;
