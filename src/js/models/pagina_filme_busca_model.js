@@ -1,22 +1,22 @@
 class Model {
   constructor(nomeFilme) {
     this.filme = nomeFilme;
-    this.titulo = "";
-    this.sinopse = "";
-    this.diretor = "";
-    this.genero = "";
-    this.avaliacao = "";
-    this.capa = "";
-    this.ano = "";
-    this.tipo = "";
-    this.duracao = "";
-    this.ator = "";
-    this.response = "";
+    this.titulo = '';
+    this.sinopse = '';
+    this.diretor = '';
+    this.genero = '';
+    this.avaliacao = '';
+    this.capa = '';
+    this.ano = '';
+    this.tipo = '';
+    this.duracao = '';
+    this.ator = '';
+    this.response = '';
   }
 
   buscaFilme() {
     // let chave = "81849d08";
-    // const requisicao = new XMLHttpRequest();
+    const requisicao = new XMLHttpRequest();
 
     // requisicao.onload = () => {
     //   if (requisicao.status == 200) {
@@ -29,7 +29,7 @@ class Model {
     //     }
     //   }
     // };
-    requisicao.addEventListener("load", () => {
+    requisicao.addEventListener('load', () => {
       if (requisicao.status == 200 && requisicao.readyState == 4) {
         const dados = JSON.parse(requisicao.responseText);
         console.log(dados);
@@ -37,7 +37,7 @@ class Model {
       }
     });
     requisicao.open(
-      "GET",
+      'GET',
       `//www.omdbapi.com/?t=${this.filme}&apikey=81849d08`,
       false
     );
