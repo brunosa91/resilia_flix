@@ -14,43 +14,43 @@ class Model {
     this.response = "";
   }
 
-  // buscaFilme() {
-  //   // let chave = "81849d08";
-  //   // const requisicao = new XMLHttpRequest();
+  buscaFilme() {
+    // let chave = "81849d08";
+    // const requisicao = new XMLHttpRequest();
 
-  //   // requisicao.onload = () => {
-  //   //   if (requisicao.status == 200) {
-  //   //     const response = JSON.parse(requisicao.response);
-  //   //     if (response.Response == 'True') {
-  //   //       console.log(response);
-  //   //       this._atualizaFilmes(response);
-  //   //     } else {
-  //   //       return (this.response = false);
-  //   //     }
-  //   //   }
-  //   // };
-  //   requisicao.addEventListener("load", () => {
-  //     if (requisicao.status == 200 && requisicao.readyState == 4) {
-  //       const dados = JSON.parse(requisicao.responseText);
-  //       console.log(dados);
-  //       this._atualizaFilmes(dados);
-  //     }
-  //   });
-  //   requisicao.open(
-  //     "GET",
-  //     `http://www.omdbapi.com/?t=${this.filme}&apikey=81849d08`,
-  //     false
-  //   );
-  //   requisicao.send();
-  // }
-
-  carregarBuscaFilmes(filme) {
-    return $.ajax({
-      url: `//www.omdbapi.com/?t=${filme}&apikey=81849d08`,
-      type: "GET",
-      dataType: "json",
+    // requisicao.onload = () => {
+    //   if (requisicao.status == 200) {
+    //     const response = JSON.parse(requisicao.response);
+    //     if (response.Response == 'True') {
+    //       console.log(response);
+    //       this._atualizaFilmes(response);
+    //     } else {
+    //       return (this.response = false);
+    //     }
+    //   }
+    // };
+    requisicao.addEventListener("load", () => {
+      if (requisicao.status == 200 && requisicao.readyState == 4) {
+        const dados = JSON.parse(requisicao.responseText);
+        console.log(dados);
+        this._atualizaFilmes(dados);
+      }
     });
+    requisicao.open(
+      "GET",
+      `//www.omdbapi.com/?t=${this.filme}&apikey=81849d08`,
+      false
+    );
+    requisicao.send();
   }
+
+  // carregarBuscaFilmes(filme) {
+  //   return $.ajax({
+  //     url: `//www.omdbapi.com/?t=${filme}&apikey=81849d08`,
+  //     type: "GET",
+  //     dataType: "json",
+  //   });
+  // }
 
   _atualizaFilmes(objetoFilme) {
     this.titulo = objetoFilme.Title;
