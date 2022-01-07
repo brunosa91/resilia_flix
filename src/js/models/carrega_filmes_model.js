@@ -20,6 +20,7 @@ class EscolheFilmesModel {
     );
     requisicao.send();
   }
+
   _atualizaFilmes(objetoFilme) {
     this.titulo = objetoFilme.Title;
     this.capa = objetoFilme.Poster;
