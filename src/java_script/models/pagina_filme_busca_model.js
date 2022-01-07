@@ -22,19 +22,26 @@ class Model {
       `http://www.omdbapi.com/?apikey=${chave}&t=${this.filme}`,
       false
     );
-    requisicao.onload = () => {
-      if (requisicao.status == 200) {
-        const response = JSON.parse(requisicao.response);
-        if (response.Response == 'True') {
-          console.log(response);
-          this._atualizaFilmes(response);
-        } else {
-          return (this.response = false);
-        }
+    // requisicao.onload = () => {
+    //   if (requisicao.status == 200) {
+    //     const response = JSON.parse(requisicao.response);
+    //     if (response.Response == 'True') {
+    //       console.log(response);
+    //       this._atualizaFilmes(response);
+    //     } else {
+    //       return (this.response = false);
+    //     }
+    //   }
+    // };
+    requisicao.addEventListener('load', () => {
+      if ((requisicao.status == 200) & (requisicao.readyState == 4)) {
+        const dados = JSON.parse(requisicao.responseText);
+        this._atualizaFilmes(dados);
       }
-    };
+    });
     requisicao.send();
   }
+
   _atualizaFilmes(objetoFilme) {
     this.titulo = objetoFilme.Title;
     this.sinopse = objetoFilme.Plot;
@@ -49,6 +56,7 @@ class Model {
     this.avaliacao = objetoFilme.Ratings[0].Value;
     console.log(this.avaliacao);
   }
+
   novoTitulo() {
     return this.titulo;
   }
