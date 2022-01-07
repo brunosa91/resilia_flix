@@ -15,11 +15,11 @@ class Model {
   }
 
   buscaFilme() {
-    let chave = "81849d08";
+    // let chave = "81849d08";
     const requisicao = new XMLHttpRequest();
     requisicao.open(
       "GET",
-      `http://www.omdbapi.com/?apikey=${chave}&t=${this.filme}`,
+      `http://www.omdbapi.com/?t=${this.filme}&apikey=81849d08`,
       false
     );
     // requisicao.onload = () => {
