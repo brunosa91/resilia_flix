@@ -65,6 +65,11 @@ main {
   height: 100%;
 }
 
+#entrar {
+  font-family: "Varela Round", sans-serif;
+  font-size: 15px;
+}
+
 .card-1,
 .card-2,
 .card-3,
