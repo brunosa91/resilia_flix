@@ -12,7 +12,7 @@ class Controller {
       model.buscaFilme();
       let view = new View();
       if (model.response === false) {
-        console.log(model.response);
+        console.log(model);
         view.mostraErro();
         view.removeAppend();
       } else if (model.capa === "N/A") {
