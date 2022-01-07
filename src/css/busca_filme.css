@@ -137,7 +137,8 @@
     flex-direction: column-reverse;
   }
 
-  .imagem {
+  .imagem,
+  .imagem-erro {
     display: none;
     height: 60%;
     padding-top: 10px;
@@ -178,7 +179,8 @@
     display: none;
   }
 
-  .imagem {
+  .imagem,
+  .imagem-erro {
     display: none;
     height: 60%;
     margin-top: 10px;
