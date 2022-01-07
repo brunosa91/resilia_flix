@@ -46,7 +46,7 @@ class Model {
 
   carregarBuscaFilmes(filme) {
     return $.ajax({
-      url: `http://www.omdbapi.com/?t=${filme}&apikey=81849d08`,
+      url: `//www.omdbapi.com/?t=${filme}&apikey=81849d08`,
       type: "GET",
       dataType: "json",
     });
