@@ -1,25 +1,25 @@
 <h1> ResiliaFlix </h1>
 
 <p>◌ Status: Developed </p>
-<p>◌ Tebalho de final do módulo 2 da Resilia Educação.ebalho de final do módulo 2 da Resilia Educação. </p>
+<p>◌ Trabalho de final do módulo 2 da Resilia Educação.</p>
 
 ⮶ Desenvolvido por:
-   <div style="display: flex; align-items: flex-start; justify-content:space-around;"  heigth="180em" width="500em">
+   <div style="display: flex; align-items: flex-start; justify-content:space-around; align-self:center"  heigth="180em" width="500em">
      <div>
        <p>Ana Amélia Balbi</p>
-       <img src="https://github.com/brunosa91/resilia_flix/blob/master/src/img/ptcp.1new.jpg" heigth="20em" width="180em"/>
+       <img src="https://github.com/brunosa91/resilia_flix/blob/master/src/img/ptcp.1new.jpg" heigth="20em" width="100em"/>
      </div>
      <div>
        <p style="color:purple"> Bruno de Sá </p>
-       <img src="https://github.com/brunosa91/resilia_flix/blob/master/src/img/ptcp.2new.jpg" heigth="180em" width="180em" />
+       <img src="https://github.com/brunosa91/resilia_flix/blob/master/src/img/ptcp.2new.jpg" heigth="180em" width="100em" />
      </div>
      <div>
        <p> Carol Miranda </p>
-       <img src="https://github.com/brunosa91/resilia_flix/blob/master/src/img/ptcp.3new.jpg" heigth="180em" width="180em" />
+       <img src="https://github.com/brunosa91/resilia_flix/blob/master/src/img/ptcp.3new.jpg" heigth="180em" width="100em" />
      </div>
      <div>
        <p> Luziane Gering </p>
-       <img src="https://github.com/brunosa91/resilia_flix/blob/master/src/img/luzi.jfif" heigth="180em" width="180em" />
+       <img src="https://github.com/brunosa91/resilia_flix/blob/master/src/img/luzi.jfif" heigth="180em" width="100em" />
      </div>
    </div>
     
@@ -49,8 +49,7 @@
       ◌ CSS
       ◌ JavaScript
       ◌ Bootstrap
-      ◌ 
-      ◌
+     
       
      
       
