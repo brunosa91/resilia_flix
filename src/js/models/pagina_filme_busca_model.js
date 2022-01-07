@@ -15,20 +15,7 @@ class Model {
   }
 
   buscaFilme() {
-    // let chave = "81849d08";
     const requisicao = new XMLHttpRequest();
-
-    // requisicao.onload = () => {
-    //   if (requisicao.status == 200) {
-    //     const response = JSON.parse(requisicao.response);
-    //     if (response.Response == 'True') {
-    //       console.log(response);
-    //       this._atualizaFilmes(response);
-    //     } else {
-    //       return (this.response = false);
-    //     }
-    //   }
-    // };
     requisicao.addEventListener('load', () => {
       if (requisicao.status == 200 && requisicao.readyState == 4) {
         const dados = JSON.parse(requisicao.responseText);
@@ -43,14 +30,6 @@ class Model {
     );
     requisicao.send();
   }
-
-  // carregarBuscaFilmes(filme) {
-  //   return $.ajax({
-  //     url: `//www.omdbapi.com/?t=${filme}&apikey=81849d08`,
-  //     type: "GET",
-  //     dataType: "json",
-  //   });
-  // }
 
   _atualizaFilmes(objetoFilme) {
     this.titulo = objetoFilme.Title;

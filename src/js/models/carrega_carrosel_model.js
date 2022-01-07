@@ -1,14 +1,13 @@
 class CarroselModel {
   constructor(nomeFilme) {
     this.filme = nomeFilme;
-    this.capa = "";
+    this.capa = '';
   }
 
   buscaFilme() {
-    // let chave = "81849d08";
     const requisicao = new XMLHttpRequest();
     requisicao.open(
-      "GET",
+      'GET',
       `http://www.omdbapi.com/?apikey=81849d08&t=${this.filme}`,
       false
     );
